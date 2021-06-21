@@ -12,10 +12,12 @@ const MenuNav = () => {
           'font-thin',
           'hover:border-l-4',
           'hover:border-uni-black',
-          'hover:font-black'
+          'hover:font-black',
+          'active:border-l-4',
+          'active:border-uni-black'
         )}
       >
-        <Link to={menuItems[name].label} smooth={true} offset={-150}>
+        <Link spy={true} to={menuItems[name].label} smooth={true} offset={-150}>
           {menuItems[name].label}
         </Link>
       </li>
@@ -23,7 +25,7 @@ const MenuNav = () => {
   });
 
   return (
-    <div className="w-1/3 sticky top-24">
+    <div className="w-1/3 sticky top-24 hidden sm:block">
       <ul className="">{listItems}</ul>
     </div>
   );

@@ -1,3 +1,4 @@
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import tw from '../../helpers/tailwind';
 import NavItem from './NavItem';
 import logo from '../../images/logo.png';
@@ -34,7 +35,7 @@ const NavBar = () => {
         <img className="h-14 w-auto" src={logo} alt="logo" />
         <div className="sm:hidden">
           <button type="button" className="text-white" onClick={toggleMenu}>
-            {isOpen ? <p>X</p> : <p>Open</p>}
+            {isOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
           </button>
         </div>
         <div

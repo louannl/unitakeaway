@@ -115,106 +115,136 @@ export const menuItems = {
   },
   pizzas: {
     label: 'Pizzas',
-    type: '3-col',
+    type: 'column',
     description:
       'Our pizzas are freshly baked while you wait. We use only the finest Italian ingredients, our specially prepared sauce and mozzarella cheese.',
     items: [
       {
         name: 'Margherita',
-        '7"': '3.00',
-        '9"': '5.00',
-        '12"': '8.00',
+        prices: {
+          '7"': '3.00',
+          '9"': '5.00',
+          '12"': '8.00',
+        },
       },
       {
         name: 'Cheese & Onion',
-        '7"': '3.50',
-        '9"': '6.00',
-        '12"': '8.50',
+        prices: {
+          '7"': '3.50',
+          '9"': '6.00',
+          '12"': '8.50',
+        },
       },
       {
         name: 'Ham & Pineapple',
-        '7"': '4.00',
-        '9"': '6.00',
-        '12"': '9.30',
+        prices: {
+          '7"': '4.00',
+          '9"': '6.00',
+          '12"': '9.30',
+        },
       },
       {
         name: 'Double Pepperoni',
-        '7"': '4.00',
-        '9"': '6.00',
-        '12"': '9.50',
+        prices: {
+          '7"': '4.00',
+          '9"': '6.00',
+          '12"': '9.50',
+        },
       },
       {
         name: 'Doner',
-        '7"': '4.40',
-        '9"': '6.00',
-        '12"': '9.50',
+        prices: {
+          '7"': '4.40',
+          '9"': '6.00',
+          '12"': '9.50',
+        },
       },
       {
         name: 'BBQ Chicken Tikka',
-        '7"': '4.40',
-        '9"': '6.00',
-        '12"': '9.50',
+        prices: {
+          '7"': '4.40',
+          '9"': '6.00',
+          '12"': '9.50',
+        },
       },
       {
         name: 'Bacon',
-        '7"': '4.50',
-        '9"': '6.50',
-        '12"': '9.50',
+        prices: {
+          '7"': '4.50',
+          '9"': '6.50',
+          '12"': '9.50',
+        },
       },
       {
         name: 'Chicken & Mushroom',
-        '7"': '4.20',
-        '9"': '6.00',
-        '12"': '9.30',
+        prices: {
+          '7"': '4.20',
+          '9"': '6.00',
+          '12"': '9.30',
+        },
       },
       {
         name: 'Ham & Sweetcorn',
-        '7"': '4.30',
-        '9"': '6.00',
-        '12"': '9.30',
+        prices: {
+          '7"': '4.30',
+          '9"': '6.00',
+          '12"': '9.30',
+        },
       },
       {
         name: 'Veggie Feast',
         description: 'Mushrooms, Peppers, Onions & Sweetcorn',
-        '7"': '4.40',
-        '9"': '6.50',
-        '12"': '9.80',
+        prices: {
+          '7"': '4.40',
+          '9"': '6.50',
+          '12"': '9.80',
+        },
       },
       {
         name: 'Chicken Feast',
         description: 'Chicken, Ham, Green peppers, Mushroom & Sweetcorn',
-        '7"': '4.50',
-        '9"': '6.50',
-        '12"': '9.90',
+        prices: {
+          '7"': '4.50',
+          '9"': '6.50',
+          '12"': '9.90',
+        },
       },
       {
         name: 'Pepperoni Feast',
         description: 'Pepperoni, Mushrooms, Peppers & Onions',
-        '7"': '4.50',
-        '9"': '6.50',
-        '12"': '9.90',
+        prices: {
+          '7"': '4.50',
+          '9"': '6.50',
+          '12"': '9.90',
+        },
       },
       {
         name: 'Spicy Tandoori',
         description:
           'Chili Base, Tandoori Chicken, Peppers, Mushrooms & Jalapenos',
-        '7"': '4.50',
-        '9"': '6.50',
-        '12"': '9.90',
+        prices: {
+          '7"': '4.50',
+          '9"': '6.50',
+          '12"': '9.90',
+        },
       },
       {
         name: 'Mexican',
         description: 'Spicy Beef, Peppers, Onions & Jalapenos',
-        '7"': '4.50',
-        '9"': '6.50',
-        '12"': '9.90',
+        prices: {
+          '7"': '4.50',
+          '9"': '6.50',
+          '12"': '9.90',
+        },
       },
       {
         name: 'Mighty Meaty',
         description: 'Spicy Beef, Chicken, Ham & Pepperoni',
-        '7"': '4.50',
-        '9"': '6.50',
-        '12"': '9.90',
+        prices: {
+          '7"': '4.50',
+          '9"': '6.50',
+          '12"': '9.90',
+        },
       },
     ],
     create: {
@@ -258,6 +288,7 @@ export const menuItems = {
   },
   garlicPizzaBread: {
     label: 'Garlic Pizza Bread',
+    type: 'column',
     items: [],
     extras: [],
   },
@@ -273,8 +304,51 @@ export const menuItems = {
   },
   kebabs: {
     label: 'Kebabs',
-    type: '2-col',
-    items: [],
+    type: 'column',
+    items: [
+      {
+        name: 'Lamb Doner',
+        description:
+          'Cooked on a vertical spit, sliced into thin crisp shavings',
+        prices: {
+          Small: '4.30',
+          Large: '5.30',
+        },
+      },
+      {
+        name: 'Chicken Shish',
+        description:
+          'Pieces of Chicken breast marinated and cooked on our open grill',
+        prices: {
+          Small: '5.00',
+          Large: '7.00',
+        },
+      },
+      {
+        name: 'Lamb Shish',
+        description: 'Pieces of Lamb marinated and cooked on our open grill',
+        prices: {
+          Small: '5.00',
+          Large: '7.00',
+        },
+      },
+      {
+        name: 'Kofte',
+        description:
+          'Lamb mince infused with herbs & spices cooked on our open grill',
+        prices: {
+          Small: '5.00',
+          Large: '7.00',
+        },
+      },
+      {
+        name: 'Doner Meat & Chips',
+        prices: {
+          Small: '4.50',
+          Large: '5.50',
+        },
+      },
+    ],
     extras: [],
   },
   sides: {
