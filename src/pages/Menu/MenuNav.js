@@ -1,9 +1,8 @@
 import { menuItems } from '../../uniMenuItems';
 import tw from '../../helpers/tailwind';
 
-const MenuList = () => {
-  const listItemNames = Object.keys(menuItems);
-  const listItems = listItemNames.map((name) => {
+const MenuNav = () => {
+  const listItems = Object.keys(menuItems).map((name) => {
     return (
       <li
         className={tw(
@@ -15,16 +14,16 @@ const MenuList = () => {
           'hover:font-black'
         )}
       >
-        {name}
+        {menuItems[name].label}
       </li>
     );
   });
 
   return (
-    <div>
+    <div className="w-1/3">
       <ul>{listItems}</ul>
     </div>
   );
 };
 
-export default MenuList;
+export default MenuNav;

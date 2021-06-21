@@ -1,5 +1,6 @@
 export const menuItems = {
-  Deals: {
+  deals: {
+    label: 'Deals',
     'Burger Deals': [
       {
         name: '1/4 Pounder Burger Meal',
@@ -62,7 +63,10 @@ export const menuItems = {
       },
     ],
   },
-  Burgers: {
+  burgers: {
+    label: 'Burgers',
+    description:
+      'Served in a lightly toasted bun with your choice of salad and sauce.',
     items: [
       { name: '1/4 Pounder Beef Burger', price: '2.80' },
       { name: '1/2 Pounder Beef Burger', price: '4.30' },
@@ -108,7 +112,10 @@ export const menuItems = {
       { name: 'Hash Brown', price: '0.60' },
     ],
   },
-  Pizzas: {
+  pizzas: {
+    label: 'Pizzas',
+    description:
+      'Our pizzas are freshly baked while you wait. We use only the finest Italian ingredients, our specially prepared sauce and mozzarella cheese.',
     items: [
       {
         name: 'Margherita',
@@ -247,11 +254,13 @@ export const menuItems = {
       ],
     },
   },
-  'Garlic Pizza Bread': {
+  garlicPizzaBread: {
+    label: 'Garlic Pizza Bread',
     items: [],
     extras: [],
   },
-  'Southern Fried Chicken': {
+  southernFriedChicken: {
+    label: 'Southern Fried Chicken',
     items: [
       { name: '5 Piece Chicken Wings', price: '2.50' },
       { name: '10 Piece Chicken Wings', price: '5.00' },
@@ -260,15 +269,18 @@ export const menuItems = {
     ],
     extras: [],
   },
-  Kebabs: {
+  kebabs: {
+    label: 'Kebabs',
     items: [],
     extras: [],
   },
-  Sides: {
+  sides: {
+    label: 'Sides',
     items: [],
     extras: [],
   },
-  Drinks: {
+  drinks: {
+    label: 'Drinks',
     items: [],
     extras: [],
   },
