@@ -1,3 +1,4 @@
+import { Element } from 'react-scroll';
 import React from 'react';
 import { Content } from '../../components/UI/Content';
 import { Header } from '../../components/UI/headers';
@@ -7,6 +8,7 @@ import burger from '../../images/burger.png';
 const Home = () => {
   return (
     <React.Fragment>
+      <Element name="home" />
       <Content className="text-center">
         <Header className="text-uni-green">
           We are a family run business who take pride in serving you the best

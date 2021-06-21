@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 import { menuItems } from '../../uniMenuItems';
 import tw from '../../helpers/tailwind';
 
@@ -14,14 +15,16 @@ const MenuNav = () => {
           'hover:font-black'
         )}
       >
-        {menuItems[name].label}
+        <Link to={menuItems[name].label} smooth={true}>
+          {menuItems[name].label}
+        </Link>
       </li>
     );
   });
 
   return (
     <div className="w-1/3">
-      <ul>{listItems}</ul>
+      <ul className="">{listItems}</ul>
     </div>
   );
 };

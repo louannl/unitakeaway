@@ -1,3 +1,4 @@
+import { Element } from 'react-scroll';
 import { Content } from '../../components/UI/Content';
 import MenuNav from './MenuNav';
 import MenuItems from './MenuItems';
@@ -7,6 +8,7 @@ import { Header } from '../../components/UI/headers';
 const Menu = () => {
   return (
     <Content>
+      <Element name="menu" />
       <Header className="text-uni-red">Menu</Header>
       <div className="flex">
         <MenuNav />

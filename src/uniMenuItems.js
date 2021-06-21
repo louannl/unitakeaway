@@ -1,6 +1,7 @@
 export const menuItems = {
   deals: {
     label: 'Deals',
+    type: 'deals',
     'Burger Deals': [
       {
         name: '1/4 Pounder Burger Meal',
@@ -114,6 +115,7 @@ export const menuItems = {
   },
   pizzas: {
     label: 'Pizzas',
+    type: '3-col',
     description:
       'Our pizzas are freshly baked while you wait. We use only the finest Italian ingredients, our specially prepared sauce and mozzarella cheese.',
     items: [
@@ -271,6 +273,7 @@ export const menuItems = {
   },
   kebabs: {
     label: 'Kebabs',
+    type: '2-col',
     items: [],
     extras: [],
   },
@@ -281,7 +284,16 @@ export const menuItems = {
   },
   drinks: {
     label: 'Drinks',
-    items: [],
+    items: [
+      { name: 'Coca-Cola', price: '0.90' },
+      { name: 'Diet Coca-Cola', price: '0.90' },
+      { name: 'Coca-Cola Zero', price: '0.90' },
+      { name: '7up', price: '0.90' },
+      { name: '1.5lt Bottle Coca-Cola', price: '2.50' },
+      { name: '1.5lt Bottle Diet Coca-Cola', price: '2.50' },
+      { name: '1.5lt Bottle Coca-Cola Zero', price: '2.50' },
+      { name: '1.5lt Bottle 7up', price: '2.50' },
+    ],
     extras: [],
   },
 };

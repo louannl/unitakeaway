@@ -1,3 +1,4 @@
+import { Element } from 'react-scroll';
 import React from 'react';
 import { AiFillCaretDown } from 'react-icons/ai';
 import tw from '../../helpers/tailwind';
@@ -6,6 +7,7 @@ import { menuItems } from '../../uniMenuItems';
 const MenuItemHeader = (props) => {
   return (
     <div className="flex items-center justify-between">
+      <Element name={props.name} />
       <h1 className="text-2xl font-bold">{props.children}</h1>
       <AiFillCaretDown />
     </div>
@@ -14,12 +16,13 @@ const MenuItemHeader = (props) => {
 
 const MenuItemList = (props) => {
   return (
-    <div className={tw('border-2', 'rounded-lg', 'shadow-md', 'px-4 py-2')}>
+    <div
+      className={tw('border-2', 'rounded-lg', 'shadow-md', 'px-4 py-2', 'my-2')}
+    >
       <h2 className="">{props.name}</h2>
       <p className="text-uni-green italic text-sm">{props.description}</p>
       <span
         className={tw(
-          'inline-block',
           'bg-gray-200',
           'rounded-full',
           'px-3 py-1',
@@ -53,7 +56,7 @@ const MenuItems = () => {
 
     menu.push(
       <React.Fragment>
-        <MenuItemHeader>{value.label}</MenuItemHeader>
+        <MenuItemHeader name={value.label}>{value.label}</MenuItemHeader>
         {items}
       </React.Fragment>
     );
