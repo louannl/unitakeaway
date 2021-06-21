@@ -1,7 +1,15 @@
-import tw from '../../helpers/tailwind';
+import { Content } from '../../components/UI/Content';
+import MenuList from './MenuList';
+// import tw from '../../helpers/tailwind';
 
 const Menu = () => {
-  return <section className=""></section>;
+  return (
+    <Content>
+      <div>Menu</div>
+      <MenuList />
+      <div>Menu items rendered</div>
+    </Content>
+  );
 };
 
 export default Menu;

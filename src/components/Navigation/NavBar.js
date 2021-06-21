@@ -18,10 +18,19 @@ const NavBar = () => {
         'text-white',
         'top-0',
         'inset-x-0',
-        'z-50'
+        'z-50',
+        'text-center'
       )}
     >
-      <div className="flex justify-between items-center m-1">
+      <div
+        className={tw(
+          'flex',
+          'justify-between',
+          'items-center',
+          'm-1',
+          'max-w-screen-lg mx-auto'
+        )}
+      >
         <img className="h-14 w-auto" src={logo} alt="logo" />
         <div className="sm:hidden">
           <button type="button" className="text-white" onClick={toggleMenu}>

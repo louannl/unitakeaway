@@ -19,6 +19,9 @@ module.exports = {
       yellow: colors.amber,
     },
     extend: {
+      fontFamily: {
+        Courgette: ['Courgette', 'cursive'],
+      },
       colors: {
         'uni-green': '#00A058',
         'uni-black': '#272727',
@@ -29,6 +32,7 @@ module.exports = {
   variants: {
     extend: {
       fill: ['hover', 'focus'],
+      fontWeight: ['hover', 'focus'],
     },
   },
   plugins: [],
