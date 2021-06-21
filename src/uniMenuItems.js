@@ -294,6 +294,8 @@ export const menuItems = {
   },
   southernFriedChicken: {
     label: 'Southern Fried Chicken',
+    description:
+      'Chicken portions covered in our secret recipe coating and pressure cooked until tender.',
     items: [
       { name: '5 Piece Chicken Wings', price: '2.50' },
       { name: '10 Piece Chicken Wings', price: '5.00' },
@@ -305,6 +307,7 @@ export const menuItems = {
   kebabs: {
     label: 'Kebabs',
     type: 'column',
+    description: 'Served in pitta or wrap with your choice of salad and sauce.',
     items: [
       {
         name: 'Lamb Doner',

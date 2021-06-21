@@ -1,15 +1,24 @@
 import tw from '../../helpers/tailwind';
 
+export const ItemName = (props) => {
+  return <h2 className={tw('pb-0.5', props.className)}>{props.children}</h2>;
+};
+
 export const ItemDescription = (props) => {
   return (
-    <p className={tw('text-uni-green', 'italic', 'text-sm', props.className)}>
+    <p
+      className={tw(
+        'text-uni-green',
+        'italic',
+        'text-sm',
+        'pb-0.5',
+        'flex-grow',
+        props.className
+      )}
+    >
       {props.children}
     </p>
   );
-};
-
-export const ItemName = (props) => {
-  return <h2 className={tw(props.className)}>{props.children}</h2>;
 };
 
 export const ItemPrice = (props) => {
@@ -36,6 +45,7 @@ export const DefaultListType = (props) => {
   return (
     <div
       className={tw(
+        'flex flex-col',
         'border-2',
         'rounded-lg',
         'shadow-md',
@@ -46,7 +56,9 @@ export const DefaultListType = (props) => {
     >
       <ItemName>{props.name}</ItemName>
       <ItemDescription>{props.description}</ItemDescription>
-      <ItemPrice>£{props.price}</ItemPrice>
+      <div>
+        <ItemPrice>£{props.price}</ItemPrice>
+      </div>
     </div>
   );
 };
@@ -59,7 +71,7 @@ export const ColumnListType = (props) => {
     for (const [key, value] of Object.entries(item.prices)) {
       itemPrices.push(
         <ItemPrice>
-          {key}: £{value}
+          {key} : £{value}
         </ItemPrice>
       );
     }
@@ -67,6 +79,7 @@ export const ColumnListType = (props) => {
     return (
       <div
         className={tw(
+          'flex flex-col',
           'border-2',
           'rounded-lg',
           'shadow-md',
@@ -77,7 +90,7 @@ export const ColumnListType = (props) => {
       >
         <ItemName>{item.name}</ItemName>
         <ItemDescription>{item.description}</ItemDescription>
-        {itemPrices}
+        <div>{itemPrices}</div>
       </div>
     );
   });
