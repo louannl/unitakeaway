@@ -4,7 +4,7 @@ import Menu from './pages/Menu/Menu';
 
 function App() {
   return (
-    <div className="pt-24">
+    <div className="-mt-2">
       <NavBar />
       <Home />
       <Menu />

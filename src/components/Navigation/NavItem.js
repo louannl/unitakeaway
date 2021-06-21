@@ -16,6 +16,7 @@ const NavItem = (props) => {
       )}
       to={props.link}
       smooth={true}
+      offset={-100}
     >
       {props.children}
     </Link>

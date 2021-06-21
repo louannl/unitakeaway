@@ -15,7 +15,7 @@ const MenuNav = () => {
           'hover:font-black'
         )}
       >
-        <Link to={menuItems[name].label} smooth={true}>
+        <Link to={menuItems[name].label} smooth={true} offset={-150}>
           {menuItems[name].label}
         </Link>
       </li>
@@ -23,7 +23,7 @@ const MenuNav = () => {
   });
 
   return (
-    <div className="w-1/3">
+    <div className="w-1/3 sticky top-24">
       <ul className="">{listItems}</ul>
     </div>
   );

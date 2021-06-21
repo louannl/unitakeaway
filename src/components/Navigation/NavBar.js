@@ -13,7 +13,7 @@ const NavBar = () => {
   return (
     <header
       className={tw(
-        'fixed',
+        'sticky',
         'bg-uni-black',
         'text-white',
         'top-0',
