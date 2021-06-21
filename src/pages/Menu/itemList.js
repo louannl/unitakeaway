@@ -16,6 +16,7 @@ export const ItemPrice = (props) => {
   return (
     <span
       className={tw(
+        'inline-block',
         'bg-gray-200',
         'rounded-full',
         'px-3 py-1',
@@ -26,7 +27,7 @@ export const ItemPrice = (props) => {
         props.className
       )}
     >
-      £{props.children}
+      {props.children}
     </span>
   );
 };
@@ -45,7 +46,7 @@ export const DefaultListType = (props) => {
     >
       <ItemName>{props.name}</ItemName>
       <ItemDescription>{props.description}</ItemDescription>
-      <ItemPrice>{props.price}</ItemPrice>
+      <ItemPrice>£{props.price}</ItemPrice>
     </div>
   );
 };
@@ -53,38 +54,33 @@ export const DefaultListType = (props) => {
 export const ColumnListType = (props) => {
   const items = props.items;
 
-  const headers = Object.keys(items[0].prices).map((head) => {
-    return <th>{head}</th>;
-  });
-
-  const tableContent = items.map((item) => {
-    const prices = Object.values(item.prices);
-    let priceContent = prices.map((price) => {
-      return (
-        <td>
-          <ItemPrice>{price}</ItemPrice>
-        </td>
+  let list = items.map((item) => {
+    let itemPrices = [];
+    for (const [key, value] of Object.entries(item.prices)) {
+      itemPrices.push(
+        <ItemPrice>
+          {key}: £{value}
+        </ItemPrice>
       );
-    });
+    }
 
     return (
-      <tr className="border-b-2">
-        <td>
-          <ItemName>{item.name}</ItemName>
-          <ItemDescription>{item.description}</ItemDescription>
-        </td>
-        {priceContent}
-      </tr>
+      <div
+        className={tw(
+          'border-2',
+          'rounded-lg',
+          'shadow-md',
+          'px-4 py-2',
+          'm-2',
+          'w-full sm:w-1/3 md:w-1/4'
+        )}
+      >
+        <ItemName>{item.name}</ItemName>
+        <ItemDescription>{item.description}</ItemDescription>
+        {itemPrices}
+      </div>
     );
   });
 
-  return (
-    <table className="table-auto">
-      <tr>
-        <th>{props.label}</th>
-        {headers}
-      </tr>
-      {tableContent}
-    </table>
-  );
+  return [list];
 };
