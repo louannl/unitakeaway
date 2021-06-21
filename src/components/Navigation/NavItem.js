@@ -5,6 +5,7 @@ const NavItem = (props) => {
   return (
     <Link
       className={tw(
+        'block',
         'cursor-pointer',
         'px-2 py-1',
         'sm:ml-2',
