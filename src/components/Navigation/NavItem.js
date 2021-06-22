@@ -14,7 +14,9 @@ const NavItem = (props) => {
         'transform duration-500',
         'hover:text-uni-red'
       )}
+      activeClass="text-uni-red"
       to={props.link}
+      spy={true}
       smooth={true}
       offset={-100}
     >

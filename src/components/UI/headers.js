@@ -8,6 +8,7 @@ export const Header = (props) => {
         'text-4xl',
         'text-center',
         'mt-8',
+        'mx-2',
         props.className
       )}
     >

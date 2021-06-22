@@ -8,12 +8,13 @@ import { Header } from '../../components/UI/headers';
 const Menu = () => {
   return (
     <Content>
-      <Element name="menu" />
-      <Header className="text-uni-red">Menu</Header>
-      <div className="flex items-start">
-        <MenuNav />
-        <MenuItems />
-      </div>
+      <Element name="menu">
+        <Header className="text-uni-red">Menu</Header>
+        <div className="flex items-start">
+          <MenuNav />
+          <MenuItems />
+        </div>
+      </Element>
     </Content>
   );
 };

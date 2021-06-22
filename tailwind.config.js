@@ -32,7 +32,8 @@ module.exports = {
   variants: {
     extend: {
       fill: ['hover', 'focus'],
-      fontWeight: ['hover', 'focus'],
+      fontWeight: ['hover', 'focus', 'active'],
+      textColor: ['active'],
     },
   },
   plugins: [],

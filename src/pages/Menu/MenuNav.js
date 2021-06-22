@@ -11,12 +11,11 @@ const MenuNav = () => {
           'cursor-pointer',
           'border-l-2 px-4 py-2',
           'font-thin',
-          'hover:border-l-4',
+          'ml-2',
           'hover:border-uni-black',
-          'hover:font-black',
-          'active:border-l-4',
-          'active:border-uni-black'
+          'hover:font-black'
         )}
+        activeClass="border-uni-black font-black"
         spy={true}
         to={menuItems[name].label}
         smooth={true}

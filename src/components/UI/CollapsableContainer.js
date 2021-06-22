@@ -9,17 +9,26 @@ const CollapsableContainer = (props) => {
     setIsOpen((prevState) => !prevState);
   };
 
+  const iconStyle = 'text-uni-green text-2xl';
+
   return (
     <div>
-      <div
-        className="flex items-center justify-between"
-        onClick={toggleCollapse}
-      >
-        <Element name={props.name} />
-        <h1 className="text-2xl font-bold">{props.name}</h1>
-        {isOpen ? <AiFillCaretDown /> : <AiFillCaretUp />}
-      </div>
-      <div className={`${isOpen ? 'hidden' : 'block'}`}>{props.children}</div>
+      <Element name={props.name}>
+        <div
+          className="flex items-center justify-between"
+          onClick={toggleCollapse}
+        >
+          <h1 className="font-Courgette text-2xl font-bold mt-4">
+            {props.name}
+          </h1>
+          {isOpen ? (
+            <AiFillCaretDown className={iconStyle} />
+          ) : (
+            <AiFillCaretUp className={iconStyle} />
+          )}
+        </div>
+        <div className={`${isOpen ? 'hidden' : 'block'}`}>{props.children}</div>
+      </Element>
     </div>
   );
 };

@@ -7,8 +7,7 @@ import burger from '../../images/burger.png';
 
 const Home = () => {
   return (
-    <React.Fragment>
-      <Element name="home" />
+    <Element name="home">
       <Content className="text-center">
         <Header className="text-uni-green">
           We are a family run business who take pride in serving you the best
@@ -20,7 +19,7 @@ const Home = () => {
         </SubHeader>
       </Content>
       <img className={tw('object-cover w-full')} src={burger} alt="burgers" />
-    </React.Fragment>
+    </Element>
   );
 };
 

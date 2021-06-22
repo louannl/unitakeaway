@@ -1,22 +1,10 @@
-import { Element } from 'react-scroll';
 import React from 'react';
-import { AiFillCaretDown } from 'react-icons/ai';
 import tw from '../../helpers/tailwind';
 import { menuItems } from '../../uniMenuItems';
 import { SubHeader } from '../../components/UI/headers';
 import { ColumnListType, DefaultListType } from './itemList';
 import MenuImages from './MenuImages';
 import CollapsableContainer from '../../components/UI/CollapsableContainer';
-
-const MenuItemHeader = (props) => {
-  return (
-    <div className="flex items-center justify-between">
-      <Element name={props.name} />
-      <h1 className="text-2xl font-bold">{props.children}</h1>
-      <AiFillCaretDown />
-    </div>
-  );
-};
 
 const MenuItems = () => {
   let menu = [];
@@ -51,7 +39,7 @@ const MenuItems = () => {
             {value.description}
           </SubHeader>
           {images}
-          <div className="flex flex-wrap items-stretch content-start">
+          <div className="flex flex-wrap items-stretch content-start justify-between">
             {items}
           </div>
         </CollapsableContainer>
