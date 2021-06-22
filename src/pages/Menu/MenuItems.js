@@ -5,6 +5,7 @@ import tw from '../../helpers/tailwind';
 import { menuItems } from '../../uniMenuItems';
 import { SubHeader } from '../../components/UI/headers';
 import { ColumnListType, DefaultListType } from './itemList';
+import MenuImages from './MenuImages';
 
 const MenuItemHeader = (props) => {
   return (
@@ -20,6 +21,7 @@ const MenuItems = () => {
   let menu = [];
   for (const [key, value] of Object.entries(menuItems)) {
     let items = [];
+    let images = [];
 
     if (!value.type) {
       items = value.items.map((item) => {
@@ -37,10 +39,17 @@ const MenuItems = () => {
       items = <ColumnListType label={value.label} items={value.items} />;
     }
 
+    if (value.images) {
+      images = <MenuImages images={value.images} />;
+    }
+
     menu.push(
       <React.Fragment>
         <MenuItemHeader name={value.label}>{value.label}</MenuItemHeader>
-        <SubHeader>{value.description}</SubHeader>
+        <SubHeader className="text-uni-black border-b-2 border-uni-green">
+          {value.description}
+        </SubHeader>
+        {images}
         <div className="flex flex-wrap items-stretch content-start">
           {items}
         </div>

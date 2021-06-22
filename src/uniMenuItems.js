@@ -1,39 +1,56 @@
+import burger from './images/menu/burger.jpg';
+import donerburger from './images/menu/donerburger.jpg';
+import chickenburger from './images/menu/chickenburger.jpg';
+import pizza from './images/menu/pizza.jpg';
+import garlicbread from './images/menu/garlicbread.jpg';
+import friedchicken from './images/menu/friedchicken.jpg';
+import donerkebab from './images/menu/donerkebab.jpg';
+import onionrings from './images/menu/onionrings.jpg';
+import chips from './images/menu/chips.jpg';
+
 export const menuItems = {
   deals: {
     label: 'Deals',
     type: 'deals',
     'Burger Deals': [
       {
+        deal: '1',
         name: '1/4 Pounder Burger Meal',
         description: '1/4 Pounder, Chips and 330ml drink',
         price: '4.80',
       },
       {
+        deal: '2',
         name: '1/2 Pounder Burger Meal',
         description: '1/2 Pounder, Chips and 330ml drink',
         price: '6.00',
       },
       {
+        deal: '3',
         name: 'Hawaiian Burger Meal',
         description: 'Hawaiian Burger, Chips and 330ml drink',
         price: '5.20',
       },
       {
+        deal: '4',
         name: 'Mexican Burger Meal',
         description: 'Mexican Burger, Chips and 330ml drink',
         price: '5.20',
       },
       {
+        deal: '5',
         name: 'Danish Burger Meal',
         description: 'Danish Burger, Chips and 330ml drink',
         price: '5.50',
       },
       {
+        deal: '6',
         name: 'Chicken Burger Meal',
         description: 'Chicken Burger, Chips and 330ml drink',
         price: '5.50',
       },
       {
+        deal: '8',
         name: 'Veggie Burger Meal',
         description: 'Veggie Burger, Chips and 330ml drink',
         price: '5.20',
@@ -41,6 +58,7 @@ export const menuItems = {
     ],
     'Kebab Deals': [
       {
+        deal: '10',
         name: 'Doner Meal',
         description: 'Doner kebab, Chips and 330ml drink',
         prices: {
@@ -51,14 +69,17 @@ export const menuItems = {
     ],
     'Pizza Deals': [
       {
+        deal: '1',
         name: '9" Pizza + 2 toppings, 1 Side, 330ml drink',
         price: '8.00',
       },
       {
+        deal: '2',
         name: '2 x 9" Pizza + 2 toppings, 1 Garlic bread cheese, 1 Dip, 2 x 330ml drinks',
         price: '15.00',
       },
       {
+        deal: '3',
         name: '2 x 12" Pizza + 3 toppings each, 1 Garlic bread cheese, 1 Dip, 1.5lt Bottle',
         price: '19.90',
       },
@@ -66,6 +87,7 @@ export const menuItems = {
   },
   burgers: {
     label: 'Burgers',
+    images: [burger, chickenburger, donerburger],
     description:
       'Served in a lightly toasted bun with your choice of salad and sauce.',
     items: [
@@ -116,8 +138,9 @@ export const menuItems = {
   pizzas: {
     label: 'Pizzas',
     type: 'column',
+    images: [pizza],
     description:
-      'Our pizzas are freshly baked while you wait. We use only the finest Italian ingredients, our specially prepared sauce and mozzarella cheese.',
+      'Our pizzas are freshly baked while you wait. We use only the finest Italian ingredients, our specially prepared sauce and mozzarella cheese. *All 12" pizzas come with FREE garlic pizza bread',
     items: [
       {
         name: 'Margherita',
@@ -289,11 +312,44 @@ export const menuItems = {
   garlicPizzaBread: {
     label: 'Garlic Pizza Bread',
     type: 'column',
-    items: [],
-    extras: [],
+    images: [garlicbread],
+    description: 'Choices of filling include: ...',
+    items: [
+      {
+        name: 'Plain',
+        prices: {
+          '9"': '2.50',
+          '12"': '3.50',
+        },
+      },
+      {
+        name: 'With Cheese',
+        prices: {
+          '9"': '3.50',
+          '12"': '5.00',
+        },
+      },
+      {
+        name: 'Add 1 Filling',
+        description: 'Our cheese pizza bread with a filling of your choice',
+        prices: {
+          '9"': '4.00',
+          '12"': '6.00',
+        },
+      },
+      {
+        name: 'Add 2 Fillings',
+        description: 'Our cheese pizza bread with fillings of your choice',
+        prices: {
+          '9"': '4.50',
+          '12"': '7.00',
+        },
+      },
+    ],
   },
   southernFriedChicken: {
     label: 'Southern Fried Chicken',
+    images: [friedchicken],
     description:
       'Chicken portions covered in our secret recipe coating and pressure cooked until tender.',
     items: [
@@ -302,11 +358,11 @@ export const menuItems = {
       { name: '15 Piece Chicken Wings', price: '7.50' },
       { name: '20 Piece Chicken Wings', price: '10.00' },
     ],
-    extras: [],
   },
   kebabs: {
     label: 'Kebabs',
     type: 'column',
+    images: [donerkebab],
     description: 'Served in pitta or wrap with your choice of salad and sauce.',
     items: [
       {
@@ -351,25 +407,140 @@ export const menuItems = {
           Large: '5.50',
         },
       },
+      {
+        name: 'Mixed: Doner & Shish',
+        prices: {
+          Large: '7.00',
+          'X-Large': '8.50',
+        },
+      },
+      {
+        name: 'Mixed: Shish & Kofte',
+        prices: {
+          Large: '7.00',
+          'X-Large': '8.50',
+        },
+      },
+      {
+        name: 'Mixed: Chicken Shish & Lamb Shish',
+        prices: {
+          Large: '7.00',
+          'X-Large': '8.50',
+        },
+      },
     ],
-    extras: [],
   },
   sides: {
     label: 'Sides',
-    items: [],
-    extras: [],
+    images: [onionrings],
+    items: [
+      { name: '5 Spicy Chicken Wings', price: '2.50' },
+      { name: '9 Onion Rings', price: '2.00' },
+      { name: '10 Garlic Mushrooms', price: '2.00' },
+      { name: 'Potato Wedges', price: '1.00' },
+      { name: 'Coleslaw', price: '1.00' },
+      {
+        name: 'Gravy / Beans / Chilli / Curry Sauce',
+        description: 'Served in a pot',
+        price: '1.00',
+      },
+      {
+        name: 'Garlic / Mint / Chilli / BBQ / Mayo / Ketchup / Burger Sauce / Relish',
+        description: 'Any one Dip',
+        price: '0.50',
+      },
+    ],
+  },
+  chips: {
+    label: 'Chips',
+    images: [chips],
+    type: 'column',
+    items: [
+      {
+        name: 'Chips',
+        prices: {
+          Small: '1.50',
+          Large: '2.00',
+        },
+      },
+      {
+        name: 'Chips & Cheese',
+        prices: {
+          Small: '2.50',
+          Large: '3.20',
+        },
+      },
+      {
+        name: 'Chips with a choice of Beans, Gravy or Curry Sauce',
+        prices: {
+          Small: '2.00',
+          Large: '2.50',
+        },
+      },
+      {
+        name: 'Chips & Cheese with a choice of Beans, Gravy or Curry Sauce',
+        prices: {
+          Large: '3.50',
+        },
+      },
+      {
+        name: 'Sausage & Chips',
+        prices: {
+          Large: '3.00',
+        },
+      },
+      {
+        name: 'Chicken Nuggets (8) & Chips',
+        prices: {
+          Large: '3.50',
+        },
+      },
+      {
+        name: 'Cod & Chips',
+        prices: {
+          Large: '4.50',
+        },
+      },
+      {
+        name: 'Scampi & Chips',
+        prices: {
+          Large: '4.50',
+        },
+      },
+    ],
   },
   drinks: {
     label: 'Drinks',
+    type: 'column',
     items: [
-      { name: 'Coca-Cola', price: '0.90' },
-      { name: 'Diet Coca-Cola', price: '0.90' },
-      { name: 'Coca-Cola Zero', price: '0.90' },
-      { name: '7up', price: '0.90' },
-      { name: '1.5lt Bottle Coca-Cola', price: '2.50' },
-      { name: '1.5lt Bottle Diet Coca-Cola', price: '2.50' },
-      { name: '1.5lt Bottle Coca-Cola Zero', price: '2.50' },
-      { name: '1.5lt Bottle 7up', price: '2.50' },
+      {
+        name: 'Coca-Cola',
+        prices: {
+          Can: '0.90',
+          '1.5lt': '2.50',
+        },
+      },
+      {
+        name: 'Diet Coca-Cola',
+        prices: {
+          Can: '0.90',
+          '1.5lt': '2.50',
+        },
+      },
+      {
+        name: 'Coca-Cola Zero',
+        prices: {
+          Can: '0.90',
+          '1.5lt': '2.50',
+        },
+      },
+      {
+        name: '7up',
+        prices: {
+          Can: '0.90',
+          '1.5lt': '2.50',
+        },
+      },
     ],
     extras: [],
   },
