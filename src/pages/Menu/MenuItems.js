@@ -6,6 +6,7 @@ import { menuItems } from '../../uniMenuItems';
 import { SubHeader } from '../../components/UI/headers';
 import { ColumnListType, DefaultListType } from './itemList';
 import MenuImages from './MenuImages';
+import CollapsableContainer from '../../components/UI/CollapsableContainer';
 
 const MenuItemHeader = (props) => {
   return (
@@ -45,14 +46,15 @@ const MenuItems = () => {
 
     menu.push(
       <React.Fragment>
-        <MenuItemHeader name={value.label}>{value.label}</MenuItemHeader>
-        <SubHeader className="text-uni-black border-b-2 border-uni-green">
-          {value.description}
-        </SubHeader>
-        {images}
-        <div className="flex flex-wrap items-stretch content-start">
-          {items}
-        </div>
+        <CollapsableContainer name={value.label}>
+          <SubHeader className="text-uni-black border-b-2 border-uni-green">
+            {value.description}
+          </SubHeader>
+          {images}
+          <div className="flex flex-wrap items-stretch content-start">
+            {items}
+          </div>
+        </CollapsableContainer>
       </React.Fragment>
     );
   }

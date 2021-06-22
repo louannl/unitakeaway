@@ -18,7 +18,15 @@ export const Header = (props) => {
 
 export const SubHeader = (props) => {
   return (
-    <h1 className={tw('font-Courgette', 'text-xl', 'mt-2', props.className)}>
+    <h1
+      className={tw(
+        'font-Courgette',
+        'text-xl',
+        'mt-2',
+        'mx-4',
+        props.className
+      )}
+    >
       {props.children}
     </h1>
   );
