@@ -11,14 +11,13 @@ const CollapsableContainer = (props) => {
 
   return (
     <div>
-      <div className="flex items-center justify-between">
+      <div
+        className="flex items-center justify-between"
+        onClick={toggleCollapse}
+      >
         <Element name={props.name} />
         <h1 className="text-2xl font-bold">{props.name}</h1>
-        {isOpen ? (
-          <AiFillCaretDown onClick={toggleCollapse} />
-        ) : (
-          <AiFillCaretUp onClick={toggleCollapse} />
-        )}
+        {isOpen ? <AiFillCaretDown /> : <AiFillCaretUp />}
       </div>
       <div className={`${isOpen ? 'hidden' : 'block'}`}>{props.children}</div>
     </div>

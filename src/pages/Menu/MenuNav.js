@@ -5,8 +5,9 @@ import tw from '../../helpers/tailwind';
 const MenuNav = () => {
   const listItems = Object.keys(menuItems).map((name) => {
     return (
-      <li
+      <Link
         className={tw(
+          'block',
           'cursor-pointer',
           'border-l-2 px-4 py-2',
           'font-thin',
@@ -16,19 +17,17 @@ const MenuNav = () => {
           'active:border-l-4',
           'active:border-uni-black'
         )}
+        spy={true}
+        to={menuItems[name].label}
+        smooth={true}
+        offset={-150}
       >
-        <Link spy={true} to={menuItems[name].label} smooth={true} offset={-150}>
-          {menuItems[name].label}
-        </Link>
-      </li>
+        {menuItems[name].label}
+      </Link>
     );
   });
 
-  return (
-    <div className="w-1/3 sticky top-24 hidden sm:block">
-      <ul className="">{listItems}</ul>
-    </div>
-  );
+  return <div className="w-1/3 sticky top-24 hidden sm:block">{listItems}</div>;
 };
 
 export default MenuNav;
