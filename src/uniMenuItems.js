@@ -71,17 +71,22 @@ export const menuItems = {
       'Pizza Deals': [
         {
           deal: '1',
-          name: '9" Pizza + 2 toppings, 1 Side, 330ml drink',
+          name: 'Pizza Deal 1',
+          description: '9" Pizza + 2 toppings, 1 Side, 330ml drink',
           price: '8.00',
         },
         {
           deal: '2',
-          name: '2 x 9" Pizza + 2 toppings, 1 Garlic bread cheese, 1 Dip, 2 x 330ml drinks',
+          name: 'Pizza Deal 2',
+          description:
+            '2 x 9" Pizza + 2 toppings, 1 Garlic bread cheese, 1 Dip, 2 x 330ml drinks',
           price: '15.00',
         },
         {
           deal: '3',
-          name: '2 x 12" Pizza + 3 toppings each, 1 Garlic bread cheese, 1 Dip, 1.5lt Bottle',
+          name: 'Pizza Deal 3',
+          description:
+            '2 x 12" Pizza + 3 toppings each, 1 Garlic bread cheese, 1 Dip, 1.5lt Bottle',
           price: '19.90',
         },
       ],

@@ -11,6 +11,8 @@ const NavBar = () => {
     setIsOpen((prevState) => !prevState);
   };
 
+  const iconStyle = 'text-2xl';
+
   return (
     <header
       className={tw(
@@ -25,23 +27,30 @@ const NavBar = () => {
     >
       <div
         className={tw(
-          'flex',
-          'justify-between',
+          'flex flex-wrap',
+          'justify-around',
           'items-center',
           'm-1',
-          'max-w-screen-lg mx-auto'
+          'max-w-screen-lg sm:mx-auto mx-0'
         )}
       >
-        <img className="h-14 w-auto m-2" src={logo} alt="logo" />
-        <div className="sm:hidden">
-          <button type="button" className="text-white" onClick={toggleMenu}>
-            {isOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
-          </button>
+        <div className="flex flex-wrap items-center justify-between">
+          <img className="h-14 w-auto m-2" src={logo} alt="logo" />
+          <div className="sm:hidden">
+            <button type="button" className="text-white" onClick={toggleMenu}>
+              {isOpen ? (
+                <AiOutlineClose className={iconStyle} />
+              ) : (
+                <AiOutlineMenu className={iconStyle} />
+              )}
+            </button>
+          </div>
         </div>
         <div
           className={tw(
             'text-2xl',
             'sm:flex',
+            'items-center',
             `${isOpen ? 'block' : 'hidden'}`
           )}
         >

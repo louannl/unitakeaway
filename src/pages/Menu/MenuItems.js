@@ -1,7 +1,7 @@
 import React from 'react';
 import { menuItems } from '../../uniMenuItems';
 import { SubHeader } from '../../components/UI/headers';
-import { ColumnListType, DealListType, DefaultListType } from './itemList';
+import { DealListType, DefaultListType } from './itemList';
 import MenuImages from './MenuImages';
 import CollapsableContainer from '../../components/UI/CollapsableContainer';
 
@@ -11,20 +11,12 @@ const MenuItems = () => {
     let items = [];
     let images = [];
 
-    if (!value.type) {
-      items = value.items.map((item) => {
-        return (
-          <DefaultListType
-            name={item.name}
-            description={item.description}
-            price={item.price}
-          />
-        );
-      });
+    if (!value.type && value.items.length > 0) {
+      items = <DefaultListType items={value.items} />;
     }
 
     if (value.type === 'column' && value.items.length > 0) {
-      items = <ColumnListType label={value.label} items={value.items} />;
+      items = <DefaultListType items={value.items} />;
     }
 
     if (value.type === 'deals' && value.items !== null) {

@@ -44,66 +44,19 @@ export const ItemPrice = (props) => {
 };
 
 export const DefaultListType = (props) => {
-  return (
-    <div
-      className={tw(
-        'flex flex-col',
-        'border-2',
-        'rounded-lg',
-        'shadow-md',
-        'px-4 py-2',
-        'm-2',
-        'w-full sm:w-1/3 md:w-1/4'
-      )}
-    >
-      <ItemName>{props.name}</ItemName>
-      <ItemDescription>{props.description}</ItemDescription>
-      <div>
-        <ItemPrice>£{props.price}</ItemPrice>
-      </div>
-    </div>
-  );
-};
-
-export const DealListType = (props) => {
-  const items = props.items;
-  let menuDeals = [];
-
-  for (const [key, value] of Object.entries(items)) {
-    let deals = [];
-
-    value.forEach((element) => {
-      deals.push(
-        <DefaultListType
-          name={element.name}
-          description={element.description}
-          price={element.price}
-        />
-      );
-    });
-
-    menuDeals.push(
-      <div className="w-full flex flex-wrap items-stretch content-start justify-between">
-        <SubHeader className="underline">{key}</SubHeader>
-        {deals}
-      </div>
-    );
-  }
-
-  return [menuDeals];
-};
-
-export const ColumnListType = (props) => {
   const items = props.items;
 
   let list = items.map((item) => {
     let itemPrices = [];
-    for (const [key, value] of Object.entries(item.prices)) {
-      itemPrices.push(
-        <ItemPrice>
-          {key} : £{value}
-        </ItemPrice>
-      );
+
+    if (item.prices) {
+      for (const [key, value] of Object.entries(item.prices)) {
+        itemPrices.push(
+          <ItemPrice>
+            {key} : £{value}
+          </ItemPrice>
+        );
+      }
     }
 
     return (
@@ -115,15 +68,45 @@ export const ColumnListType = (props) => {
           'shadow-md',
           'px-4 py-2',
           'm-2',
-          'w-full sm:w-1/3 md:w-1/4'
+          'w-full sm:w-1/3 md:w-1/4',
+          props.className
         )}
       >
+        {item.deal ? (
+          <p className="text-center underline font-Courgette font-semibold text-uni-red">
+            {item.deal}
+          </p>
+        ) : null}
         <ItemName>{item.name}</ItemName>
         <ItemDescription>{item.description}</ItemDescription>
-        <div>{itemPrices}</div>
+        <div>
+          {itemPrices.length > 0 ? (
+            itemPrices
+          ) : (
+            <ItemPrice>£{item.price}</ItemPrice>
+          )}
+        </div>
       </div>
     );
   });
 
   return [list];
+};
+
+export const DealListType = (props) => {
+  const items = props.items;
+  let menuDeals = [];
+
+  for (const [key, value] of Object.entries(items)) {
+    let deals = <DefaultListType items={value} className="border-uni-green" />;
+
+    menuDeals.push(
+      <div className="w-full flex flex-wrap items-stretch content-start justify-between">
+        <SubHeader className="text-center underline w-full">{key}</SubHeader>
+        {deals}
+      </div>
+    );
+  }
+
+  return [menuDeals];
 };
