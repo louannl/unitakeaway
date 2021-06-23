@@ -1,3 +1,5 @@
+import React from 'react';
+import { SubHeader } from '../../components/UI/headers';
 import tw from '../../helpers/tailwind';
 
 export const ItemName = (props) => {
@@ -61,6 +63,34 @@ export const DefaultListType = (props) => {
       </div>
     </div>
   );
+};
+
+export const DealListType = (props) => {
+  const items = props.items;
+  let menuDeals = [];
+
+  for (const [key, value] of Object.entries(items)) {
+    let deals = [];
+
+    value.forEach((element) => {
+      deals.push(
+        <DefaultListType
+          name={element.name}
+          description={element.description}
+          price={element.price}
+        />
+      );
+    });
+
+    menuDeals.push(
+      <div className="w-full flex flex-wrap items-stretch content-start justify-between">
+        <SubHeader className="underline">{key}</SubHeader>
+        {deals}
+      </div>
+    );
+  }
+
+  return [menuDeals];
 };
 
 export const ColumnListType = (props) => {

@@ -32,7 +32,7 @@ const NavBar = () => {
           'max-w-screen-lg mx-auto'
         )}
       >
-        <img className="h-14 w-auto" src={logo} alt="logo" />
+        <img className="h-14 w-auto m-2" src={logo} alt="logo" />
         <div className="sm:hidden">
           <button type="button" className="text-white" onClick={toggleMenu}>
             {isOpen ? <AiOutlineClose /> : <AiOutlineMenu />}

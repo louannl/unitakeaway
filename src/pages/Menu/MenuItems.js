@@ -1,8 +1,7 @@
 import React from 'react';
-import tw from '../../helpers/tailwind';
 import { menuItems } from '../../uniMenuItems';
 import { SubHeader } from '../../components/UI/headers';
-import { ColumnListType, DefaultListType } from './itemList';
+import { ColumnListType, DealListType, DefaultListType } from './itemList';
 import MenuImages from './MenuImages';
 import CollapsableContainer from '../../components/UI/CollapsableContainer';
 
@@ -26,6 +25,10 @@ const MenuItems = () => {
 
     if (value.type === 'column' && value.items.length > 0) {
       items = <ColumnListType label={value.label} items={value.items} />;
+    }
+
+    if (value.type === 'deals' && value.items !== null) {
+      items = <DealListType items={value.items} />;
     }
 
     if (value.images) {

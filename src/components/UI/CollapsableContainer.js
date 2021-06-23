@@ -18,7 +18,7 @@ const CollapsableContainer = (props) => {
           className="flex items-center justify-between"
           onClick={toggleCollapse}
         >
-          <h1 className="font-Courgette text-2xl font-bold mt-4">
+          <h1 className="font-Courgette text-2xl font-bold mt-4 text-center w-full">
             {props.name}
           </h1>
           {isOpen ? (

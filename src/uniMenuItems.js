@@ -12,78 +12,80 @@ export const menuItems = {
   deals: {
     label: 'Deals',
     type: 'deals',
-    'Burger Deals': [
-      {
-        deal: '1',
-        name: '1/4 Pounder Burger Meal',
-        description: '1/4 Pounder, Chips and 330ml drink',
-        price: '4.80',
-      },
-      {
-        deal: '2',
-        name: '1/2 Pounder Burger Meal',
-        description: '1/2 Pounder, Chips and 330ml drink',
-        price: '6.00',
-      },
-      {
-        deal: '3',
-        name: 'Hawaiian Burger Meal',
-        description: 'Hawaiian Burger, Chips and 330ml drink',
-        price: '5.20',
-      },
-      {
-        deal: '4',
-        name: 'Mexican Burger Meal',
-        description: 'Mexican Burger, Chips and 330ml drink',
-        price: '5.20',
-      },
-      {
-        deal: '5',
-        name: 'Danish Burger Meal',
-        description: 'Danish Burger, Chips and 330ml drink',
-        price: '5.50',
-      },
-      {
-        deal: '6',
-        name: 'Chicken Burger Meal',
-        description: 'Chicken Burger, Chips and 330ml drink',
-        price: '5.50',
-      },
-      {
-        deal: '8',
-        name: 'Veggie Burger Meal',
-        description: 'Veggie Burger, Chips and 330ml drink',
-        price: '5.20',
-      },
-    ],
-    'Kebab Deals': [
-      {
-        deal: '10',
-        name: 'Doner Meal',
-        description: 'Doner kebab, Chips and 330ml drink',
-        prices: {
-          small: '6.30',
-          large: '7.30',
+    items: {
+      'Burger Deals': [
+        {
+          deal: '1',
+          name: '1/4 Pounder Burger Meal',
+          description: '1/4 Pounder, Chips and 330ml drink',
+          price: '4.80',
         },
-      },
-    ],
-    'Pizza Deals': [
-      {
-        deal: '1',
-        name: '9" Pizza + 2 toppings, 1 Side, 330ml drink',
-        price: '8.00',
-      },
-      {
-        deal: '2',
-        name: '2 x 9" Pizza + 2 toppings, 1 Garlic bread cheese, 1 Dip, 2 x 330ml drinks',
-        price: '15.00',
-      },
-      {
-        deal: '3',
-        name: '2 x 12" Pizza + 3 toppings each, 1 Garlic bread cheese, 1 Dip, 1.5lt Bottle',
-        price: '19.90',
-      },
-    ],
+        {
+          deal: '2',
+          name: '1/2 Pounder Burger Meal',
+          description: '1/2 Pounder, Chips and 330ml drink',
+          price: '6.00',
+        },
+        {
+          deal: '3',
+          name: 'Hawaiian Burger Meal',
+          description: 'Hawaiian Burger, Chips and 330ml drink',
+          price: '5.20',
+        },
+        {
+          deal: '4',
+          name: 'Mexican Burger Meal',
+          description: 'Mexican Burger, Chips and 330ml drink',
+          price: '5.20',
+        },
+        {
+          deal: '5',
+          name: 'Danish Burger Meal',
+          description: 'Danish Burger, Chips and 330ml drink',
+          price: '5.50',
+        },
+        {
+          deal: '6',
+          name: 'Chicken Burger Meal',
+          description: 'Chicken Burger, Chips and 330ml drink',
+          price: '5.50',
+        },
+        {
+          deal: '8',
+          name: 'Veggie Burger Meal',
+          description: 'Veggie Burger, Chips and 330ml drink',
+          price: '5.20',
+        },
+      ],
+      'Kebab Deals': [
+        {
+          deal: '10',
+          name: 'Doner Meal',
+          description: 'Doner kebab, Chips and 330ml drink',
+          prices: {
+            small: '6.30',
+            large: '7.30',
+          },
+        },
+      ],
+      'Pizza Deals': [
+        {
+          deal: '1',
+          name: '9" Pizza + 2 toppings, 1 Side, 330ml drink',
+          price: '8.00',
+        },
+        {
+          deal: '2',
+          name: '2 x 9" Pizza + 2 toppings, 1 Garlic bread cheese, 1 Dip, 2 x 330ml drinks',
+          price: '15.00',
+        },
+        {
+          deal: '3',
+          name: '2 x 12" Pizza + 3 toppings each, 1 Garlic bread cheese, 1 Dip, 1.5lt Bottle',
+          price: '19.90',
+        },
+      ],
+    },
   },
   burgers: {
     label: 'Burgers',
