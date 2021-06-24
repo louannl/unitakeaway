@@ -2,6 +2,7 @@ import React from 'react';
 import { menuItems } from '../../uniMenuItems';
 import { SubHeader } from '../../components/UI/headers';
 import { DealListType, DefaultListType } from './itemList';
+import MenuExtras from './MenuExtras';
 import MenuImages from './MenuImages';
 import CollapsableContainer from '../../components/UI/CollapsableContainer';
 
@@ -10,6 +11,7 @@ const MenuItems = () => {
   for (const [key, value] of Object.entries(menuItems)) {
     let items = [];
     let images = [];
+    let extraItems = [];
 
     if (!value.type && value.items.length > 0) {
       items = <DefaultListType items={value.items} />;
@@ -27,18 +29,19 @@ const MenuItems = () => {
       images = <MenuImages images={value.images} />;
     }
 
+    if (value.extras) {
+      extraItems = <MenuExtras extras={value.extras} />;
+    }
+
     menu.push(
-      <React.Fragment>
-        <CollapsableContainer name={value.label}>
-          <SubHeader className="text-uni-black border-b-2 border-uni-green">
-            {value.description}
-          </SubHeader>
-          {images}
-          <div className="flex flex-wrap items-stretch content-start justify-between">
-            {items}
-          </div>
-        </CollapsableContainer>
-      </React.Fragment>
+      <CollapsableContainer name={value.label}>
+        <SubHeader className="text-uni-black">{value.description}</SubHeader>
+        {images}
+        {extraItems}
+        <div className="flex flex-wrap items-stretch content-start justify-between">
+          {items}
+        </div>
+      </CollapsableContainer>
     );
   }
 

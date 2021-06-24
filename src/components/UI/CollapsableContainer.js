@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { AiFillCaretDown, AiFillCaretUp } from 'react-icons/ai';
 import { Element } from 'react-scroll';
+import tw from '../../helpers/tailwind';
 
 const CollapsableContainer = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +16,15 @@ const CollapsableContainer = (props) => {
     <div>
       <Element name={props.name}>
         <div
-          className="flex items-center justify-between"
+          className={tw(
+            'flex',
+            'items-center',
+            'justify-between',
+            'sticky top-16 md:static',
+            'bg-white',
+            'border-b-2',
+            'border-uni-green'
+          )}
           onClick={toggleCollapse}
         >
           <h1 className="font-Courgette text-2xl font-bold mt-4 text-center w-full">

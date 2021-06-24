@@ -549,6 +549,5 @@ export const menuItems = {
         },
       },
     ],
-    extras: [],
   },
 };
