@@ -1,4 +1,5 @@
 import NavBar from './components/Navigation/NavBar';
+import ContactUs from './pages/ContactUs/ContactUs';
 import Home from './pages/Home/Home';
 import Menu from './pages/Menu/Menu';
 
@@ -8,6 +9,7 @@ function App() {
       <NavBar />
       <Home />
       <Menu />
+      <ContactUs />
     </div>
   );
 }

@@ -60,7 +60,7 @@ const NavBar = () => {
         </div>
       </div>
       <div className="bg-uni-red w-full p-1 hidden md:block">
-        Open from 4pm daily | Delivery till 2AM - 7 days a week
+        Open from 4pm daily | Delivery till 2AM - 7 days a week | 01443 405599
       </div>
     </header>
   );
