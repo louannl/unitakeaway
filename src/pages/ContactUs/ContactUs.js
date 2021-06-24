@@ -24,26 +24,28 @@ const ContactUs = () => {
         <SubHeader className="text-center text-uni-green">
           We deliver to:
         </SubHeader>
-        <MinOrder
-          counties="Treforest, Graig and Rhydyfelin"
-          minimum="6"
-          charge="1.00"
-        />
-        <MinOrder
-          counties="Hawthorn, Maesycoed, Graigwen, Hopkinstown and Cilfynydd"
-          minimum="8"
-          charge="1.50"
-        />
-        <MinOrder
-          counties="Tonteg, Church Village, Glyncoch and Coed Y Cwm"
-          minimum="10"
-          charge="2.00"
-        />
-        <MinOrder
-          counties="Trehafod, Beddau, Llantwit Fadre, Ynysybwl, Taffs Well, Nantgarw and Efail Isaf"
-          minimum="10"
-          charge="2.50"
-        />
+        <div className="flex flex-wrap justify-around">
+          <MinOrder
+            counties="Treforest, Graig and Rhydyfelin"
+            minimum="6"
+            charge="1.00"
+          />
+          <MinOrder
+            counties="Hawthorn, Maesycoed, Graigwen, Hopkinstown and Cilfynydd"
+            minimum="8"
+            charge="1.50"
+          />
+          <MinOrder
+            counties="Tonteg, Church Village, Glyncoch and Coed Y Cwm"
+            minimum="10"
+            charge="2.00"
+          />
+          <MinOrder
+            counties="Trehafod, Beddau, Llantwit Fadre, Ynysybwl, Taffs Well, Nantgarw and Efail Isaf"
+            minimum="10"
+            charge="2.50"
+          />
+        </div>
       </Content>
     </Element>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import { menuItems } from '../../uniMenuItems';
-import { SubHeader } from '../../components/UI/headers';
+import { Header, SubHeader } from '../../components/UI/headers';
 import { DealListType, DefaultListType } from './itemList';
 import ItemCreate from './ItemCreate';
 import MenuExtras from './MenuExtras';
@@ -50,7 +50,12 @@ const MenuItems = () => {
     );
   }
 
-  return <div className="w-full">{menu}</div>;
+  return (
+    <div className="w-full">
+      <Header className="text-uni-red">Menu</Header>
+      {menu}
+    </div>
+  );
 };
 
 export default MenuItems;

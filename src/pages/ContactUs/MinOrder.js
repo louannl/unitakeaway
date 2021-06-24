@@ -10,7 +10,11 @@ const MinOrder = (props) => {
         'rounded-sm',
         'text-center',
         'm-2',
-        'bg-white'
+        'bg-white',
+        'w-full',
+        'p-2',
+        'lg:w-1/3',
+        'xl:w-1/5'
       )}
     >
       <p>{props.counties}</p>
