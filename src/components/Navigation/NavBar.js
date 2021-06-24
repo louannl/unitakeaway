@@ -30,7 +30,7 @@ const NavBar = () => {
           'flex flex-wrap',
           'justify-around',
           'items-center',
-          'm-1',
+          'm-2',
           'max-w-screen-lg sm:mx-auto mx-0'
         )}
       >

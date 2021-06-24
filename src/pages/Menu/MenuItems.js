@@ -2,6 +2,7 @@ import React from 'react';
 import { menuItems } from '../../uniMenuItems';
 import { SubHeader } from '../../components/UI/headers';
 import { DealListType, DefaultListType } from './itemList';
+import ItemCreate from './ItemCreate';
 import MenuExtras from './MenuExtras';
 import MenuImages from './MenuImages';
 import CollapsableContainer from '../../components/UI/CollapsableContainer';
@@ -12,12 +13,9 @@ const MenuItems = () => {
     let items = [];
     let images = [];
     let extraItems = [];
+    let create = [];
 
     if (!value.type && value.items.length > 0) {
-      items = <DefaultListType items={value.items} />;
-    }
-
-    if (value.type === 'column' && value.items.length > 0) {
       items = <DefaultListType items={value.items} />;
     }
 
@@ -33,6 +31,10 @@ const MenuItems = () => {
       extraItems = <MenuExtras extras={value.extras} />;
     }
 
+    if (value.create) {
+      create = <ItemCreate item={value.create} />;
+    }
+
     menu.push(
       <CollapsableContainer name={value.label}>
         <SubHeader className="text-uni-black">{value.description}</SubHeader>
@@ -40,6 +42,9 @@ const MenuItems = () => {
         {extraItems}
         <div className="flex flex-wrap items-stretch content-start justify-between">
           {items}
+        </div>
+        <div className="flex flex-wrap items-stretch content-start justify-between">
+          {create}
         </div>
       </CollapsableContainer>
     );

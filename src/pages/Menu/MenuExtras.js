@@ -6,10 +6,10 @@ const MenuExtras = (props) => {
 
   let extraItems = extras.map((extra) => {
     return (
-      <div className="flex flex-wrap italic justify-between items-center">
+      <div className="flex flex-wrap italic justify-around items-center">
         <p className="text-uni-green">ADD: </p>
         <p className="mx-1">{extra.name}</p>
-        <ItemPrice>+£{extra.price}</ItemPrice>
+        {extra.price ? <ItemPrice>+£{extra.price}</ItemPrice> : null}
       </div>
     );
   });
@@ -21,8 +21,9 @@ const MenuExtras = (props) => {
         'justify-around',
         'm-4',
         'border-2',
-        'rounded-lg',
-        'border-uni-green'
+        'rounded-sm',
+        'border-uni-green',
+        'bg-white'
       )}
     >
       {extraItems}

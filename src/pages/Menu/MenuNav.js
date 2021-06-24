@@ -26,7 +26,7 @@ const MenuNav = () => {
     );
   });
 
-  return <div className="w-1/3 sticky top-24 hidden sm:block">{listItems}</div>;
+  return <div className="w-1/3 sticky top-28 hidden sm:block">{listItems}</div>;
 };
 
 export default MenuNav;

@@ -21,11 +21,11 @@ export const SubHeader = (props) => {
   return (
     <h1
       className={tw(
+        props.className,
         'font-Courgette',
         'text-xl',
         'mt-2',
-        'mx-4',
-        props.className
+        'mx-4'
       )}
     >
       {props.children}

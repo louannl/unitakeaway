@@ -21,7 +21,9 @@ const ContactUs = () => {
           </div>
           <p className="italic">01443 405599</p>
         </div>
-        <SubHeader>We deliver to:</SubHeader>
+        <SubHeader className="text-center text-uni-green">
+          We deliver to:
+        </SubHeader>
         <MinOrder
           counties="Treforest, Graig and Rhydyfelin"
           minimum="6"

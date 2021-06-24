@@ -28,13 +28,14 @@ export const ItemPrice = (props) => {
     <span
       className={tw(
         'inline-block',
-        'bg-gray-200',
-        'rounded-full',
+        'border-2',
+        'bg-green-100',
+        'border-green-200',
+        'rounded-md',
         'px-3 py-1',
         'text-sm',
-        'font-semibold',
-        'text-gray-700',
         'mx-1 my-1',
+        'capitalize',
         props.className
       )}
     >
@@ -64,12 +65,13 @@ export const DefaultListType = (props) => {
         className={tw(
           'flex flex-col',
           'border-2',
-          'rounded-lg',
+          'rounded-sm',
           'shadow-md',
           'px-4 py-2',
           'm-2',
           'text-center',
           'w-full sm:w-1/3 md:w-1/4',
+          'bg-white',
           props.className
         )}
       >

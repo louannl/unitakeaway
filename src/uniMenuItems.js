@@ -144,10 +144,9 @@ export const menuItems = {
   },
   pizzas: {
     label: 'Pizzas',
-    type: 'column',
     images: [pizza],
     description:
-      'Our pizzas are freshly baked while you wait. We use only the finest Italian ingredients, our specially prepared sauce and mozzarella cheese. *All 12" pizzas come with FREE garlic pizza bread',
+      'Our pizzas are freshly baked while you wait. We use only the finest Italian ingredients, our specially prepared sauce and mozzarella cheese.',
     items: [
       {
         name: 'Margherita',
@@ -277,6 +276,7 @@ export const menuItems = {
         },
       },
     ],
+    extras: [{ name: 'Garlic pizza bread FREE with ANY 12" Pizza' }],
     create: {
       base: ['Tomato', 'BBQ', 'Garlic', 'Currry', 'Chilli'],
       toppings: [
@@ -294,33 +294,37 @@ export const menuItems = {
         'Tomato',
         'Jalapenos',
       ],
-      prices: [
+      items: [
         {
           name: 'Any 2 Toppings',
-          '7"': '4.00',
-          '9"': '6.00',
-          '12"': '9.00',
+          prices: {
+            '7"': '4.00',
+            '9"': '6.00',
+            '12"': '9.00',
+          },
         },
         {
           name: 'Any 3 Toppings',
-          '7"': '4.40',
-          '9"': '6.50',
-          '12"': '9.50',
+          prices: {
+            '7"': '4.40',
+            '9"': '6.50',
+            '12"': '9.50',
+          },
         },
         {
           name: 'Any 4 Toppings',
-          '7"': '4.80',
-          '9"': '6.90',
-          '12"': '9.80',
+          prices: {
+            '7"': '4.80',
+            '9"': '6.90',
+            '12"': '9.80',
+          },
         },
       ],
     },
   },
   garlicPizzaBread: {
     label: 'Garlic Pizza Bread',
-    type: 'column',
     images: [garlicbread],
-    description: 'Choices of filling include: ...',
     items: [
       {
         name: 'Plain',
@@ -336,23 +340,41 @@ export const menuItems = {
           '12"': '5.00',
         },
       },
-      {
-        name: 'Add 1 Filling',
-        description: 'Our cheese pizza bread with a filling of your choice',
-        prices: {
-          '9"': '4.00',
-          '12"': '6.00',
-        },
-      },
-      {
-        name: 'Add 2 Fillings',
-        description: 'Our cheese pizza bread with fillings of your choice',
-        prices: {
-          '9"': '4.50',
-          '12"': '7.00',
-        },
-      },
     ],
+    create: {
+      description: 'Our cheese pizza bread with fillings of your choice',
+      fillings: [
+        'Spicy Beef',
+        'Pepperoni',
+        'Chicken',
+        'Ham',
+        'Bacon',
+        'Doner',
+        'Onion',
+        'Peppers',
+        'Mushrooms',
+        'Pineapple',
+        'Sweetcorn',
+        'Tomato',
+        'Jalapenos',
+      ],
+      items: [
+        {
+          name: 'Any 1 Filling',
+          prices: {
+            '9"': '4.00',
+            '12"': '6.00',
+          },
+        },
+        {
+          name: 'Any 2 Fillings',
+          prices: {
+            '9"': '4.50',
+            '12"': '7.50',
+          },
+        },
+      ],
+    },
   },
   southernFriedChicken: {
     label: 'Southern Fried Chicken',
@@ -368,7 +390,6 @@ export const menuItems = {
   },
   kebabs: {
     label: 'Kebabs',
-    type: 'column',
     images: [donerkebab],
     description: 'Served in pitta or wrap with your choice of salad and sauce.',
     items: [
@@ -461,7 +482,6 @@ export const menuItems = {
   chips: {
     label: 'Chips',
     images: [chips],
-    type: 'column',
     items: [
       {
         name: 'Chips',
@@ -518,7 +538,6 @@ export const menuItems = {
   },
   drinks: {
     label: 'Drinks',
-    type: 'column',
     items: [
       {
         name: 'Coca-Cola',

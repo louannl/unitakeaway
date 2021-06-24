@@ -5,7 +5,7 @@ import Menu from './pages/Menu/Menu';
 
 function App() {
   return (
-    <div className="-mt-2">
+    <div className="-mt-2 bg-gray-50">
       <NavBar />
       <Home />
       <Menu />
