@@ -8,6 +8,7 @@ const MenuNav = () => {
       <Link
         className={tw(
           'block',
+          'font-Courgette text-xl',
           'cursor-pointer',
           'border-l-2 px-4 py-2',
           'font-thin',

@@ -20,27 +20,51 @@ const ItemCreate = (props) => {
       itemOptions.push(
         <div
           className={tw(
-            'border-2',
-            'rounded-sm',
-            'border-uni-green',
+            'rounded-md',
+            'bg-uni-green',
             'm-2',
             'text-center',
             'shadow-md'
           )}
         >
-          <p className="capitalize italic font-semibold">Pick your {key}!</p>
-          <div className="text-uni-green">{list}</div>
+          <p className="capitalize italic font-semibold text-white">
+            Pick your {key}!
+          </p>
+          <div className="text-white italic">{list}</div>
         </div>
       );
     }
   }
 
   return (
-    <div className="w-full flex flex-wrap items-stretch content-start justify-between">
+    <div
+      className={tw(
+        'w-full',
+        'flex flex-wrap',
+        'items-stretch',
+        'content-start',
+        'justify-around',
+        'rounded-md',
+        'shadow-lg',
+        'bg-white',
+        'border-2',
+        'm-2 p-2'
+      )}
+    >
       <SubHeader className="text-uni-red text-center underline w-full">
         Create your own!
       </SubHeader>
-      <p className={tw('font-Courgette', 'mt-2', 'mx-4')}>{description}</p>
+      <p
+        className={tw(
+          'font-Courgette',
+          'mt-2',
+          'mx-4',
+          'w-full',
+          'text-center'
+        )}
+      >
+        {description}
+      </p>
       <div className={tw('w-full', 'justify-around')}>{itemOptions}</div>
       {deals}
     </div>

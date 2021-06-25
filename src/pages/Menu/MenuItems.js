@@ -40,7 +40,7 @@ const MenuItems = () => {
         <SubHeader className="text-uni-black">{value.description}</SubHeader>
         {images}
         {extraItems}
-        <div className="flex flex-wrap items-stretch content-start justify-between">
+        <div className="flex flex-wrap items-stretch content-start justify-around">
           {items}
         </div>
         <div className="flex flex-wrap items-stretch content-start justify-between">

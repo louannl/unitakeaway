@@ -3,14 +3,14 @@ const MenuImages = (props) => {
   const images = props.images;
 
   img.push(
-    <img className="object-cover rounded-md" src={images[0]} alt={images[0]} />
+    <img className="object-cover md:w-1/3" src={images[0]} alt={images[0]} />
   );
 
   img.push(
     props.images.slice(1).map((image) => {
       return (
         <img
-          className="object-cover rounded-md hidden md:block"
+          className="object-cover hidden md:block md:w-1/3"
           src={image}
           alt={image}
         />

@@ -3,14 +3,18 @@ import { SubHeader } from '../../components/UI/headers';
 import tw from '../../helpers/tailwind';
 
 export const ItemName = (props) => {
-  return <h2 className={tw('pb-0.5', props.className)}>{props.children}</h2>;
+  return (
+    <h2 className={tw('pb-0.5', 'font-semibold', props.className)}>
+      {props.children}
+    </h2>
+  );
 };
 
 export const ItemDescription = (props) => {
   return (
     <p
       className={tw(
-        'text-uni-green',
+        'text-gray-700',
         'italic',
         'text-sm',
         'pb-0.5',
@@ -70,7 +74,7 @@ export const DefaultListType = (props) => {
           'px-4 py-2',
           'm-2',
           'text-center',
-          'w-full sm:w-1/3 md:w-1/4',
+          'w-full sm:w-3/7 md:w-2/7',
           'bg-white',
           props.className
         )}
@@ -104,7 +108,7 @@ export const DealListType = (props) => {
     let deals = <DefaultListType items={value} className="border-uni-green" />;
 
     menuDeals.push(
-      <div className="w-full flex flex-wrap items-stretch content-start justify-between">
+      <div className="w-full flex flex-wrap items-stretch content-start justify-around">
         <SubHeader className="text-center underline w-full">{key}</SubHeader>
         {deals}
       </div>
