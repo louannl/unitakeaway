@@ -53,7 +53,7 @@ Review:
 - Links
   - The facebook link is actually usable and not just an image
 - Food hygiene label
-  - There is a script to the governments hygiene rating which should update itself if the rating changes. 
+  - There is a script to the government's hygiene rating which should update itself if the rating changes. 
 
 Old site vs Redesign @ 360x640
 

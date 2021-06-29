@@ -18,13 +18,22 @@ const Home = () => {
           fried chicken, you're sure to find something to satisfy your appetite!
         </SubHeader>
       </Content>
-      <div className="bg-fixed bg-contain overflow-auto h-auto lg:h-64 xl:h-96">
-        <img
-          className={tw('object-cover', 'w-full')}
-          src={burger}
-          alt="burgers"
-        />
-      </div>
+      <div
+        className={tw(
+          'w-full',
+          'md:bg-fixed',
+          'bg-cover',
+          'bg-bottom',
+          'overflow-y-scroll',
+          'h-40',
+          'md:h-64',
+          'xl:h-96'
+        )}
+        style={{
+          backgroundImage: `url(${burger})`,
+          backgroundRepeat: 'no-repeat',
+        }}
+      ></div>
     </Element>
   );
 };

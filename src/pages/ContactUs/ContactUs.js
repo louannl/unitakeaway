@@ -1,31 +1,47 @@
 import { Element } from 'react-scroll';
-import { AiFillPhone, AiFillHome } from 'react-icons/ai';
+import { AiFillPhone, AiFillHome, AiFillFacebook } from 'react-icons/ai';
 import { Content } from '../../components/UI/Content';
 import { Header, SubHeader } from '../../components/UI/headers';
 import MinOrder from './MinOrder';
+import tw from '../../helpers/tailwind';
 
 const ContactUs = () => {
   return (
     <Element name="contact-us">
       <Content>
         <Header>Contact Us</Header>
-        <SubHeader className="text-center">
+        <SubHeader className="text-center mb-2">
           Hungry? Find us on Wood Road, Treforest or place your order over the
           phone to get your food delivered to your doorstep.
         </SubHeader>
         <div className="flex flex-wrap items-center justify-center">
           <div className="w-full sm:w-1/2 text-center">
             <p>Delivery from 4PM till 2AM - 7 days a week</p>
-            <div className="flex justify-center">
+            <div className="flex justify-center mt-2">
               <AiFillHome className="text-2xl mx-1 text-uni-black" />
               <p>102 Wood Rd</p>
             </div>
             <p>Pontypridd</p>
             <p>Mid Glamorgan</p>
             <p>CF37 1RJ</p>
-            <div className="flex justify-center">
+            <div className="flex justify-center mt-2">
               <AiFillPhone className="text-2xl mx-1 text-uni-black" />
               <p className="italic">01443 405599</p>
+            </div>
+            <div
+              className={tw(
+                'flex',
+                'justify-center',
+                'my-2',
+                'cursor-pointer',
+                'hover:text-blue-800'
+              )}
+              onClick={() =>
+                window.open('https://www.facebook.com/UniTakeaway102/')
+              }
+            >
+              <AiFillFacebook className="text-2xl mx-1" />
+              Like and Follow us for updates
             </div>
           </div>
           <div className="sm:w-1/2">
