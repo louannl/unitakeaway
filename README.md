@@ -13,7 +13,7 @@
 </details>
 
 ## About The Project
-This project is a redesign of Uni Takeaway's old website, I have tried to keep
+This project is a redesign of Uni Takeaway's old website, I have kept to the brand colours and general layout of the site while adding in my own design. 
 
 ### Built With
 - React
