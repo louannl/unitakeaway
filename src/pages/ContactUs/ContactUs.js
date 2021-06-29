@@ -1,4 +1,5 @@
 import { Element } from 'react-scroll';
+import { AiFillPhone, AiFillHome } from 'react-icons/ai';
 import { Content } from '../../components/UI/Content';
 import { Header, SubHeader } from '../../components/UI/headers';
 import MinOrder from './MinOrder';
@@ -14,11 +15,18 @@ const ContactUs = () => {
         </SubHeader>
         <div className="flex flex-wrap items-center justify-center">
           <div className="w-full sm:w-1/2 text-center">
-            <p>102 Wood Rd</p>
+            <p>Delivery from 4PM till 2AM - 7 days a week</p>
+            <div className="flex justify-center">
+              <AiFillHome className="text-2xl mx-1 text-uni-black" />
+              <p>102 Wood Rd</p>
+            </div>
             <p>Pontypridd</p>
             <p>Mid Glamorgan</p>
             <p>CF37 1RJ</p>
-            <p className="italic">01443 405599</p>
+            <div className="flex justify-center">
+              <AiFillPhone className="text-2xl mx-1 text-uni-black" />
+              <p className="italic">01443 405599</p>
+            </div>
           </div>
           <div className="sm:w-1/2">
             <iframe

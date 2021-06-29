@@ -18,7 +18,13 @@ const Home = () => {
           fried chicken, you're sure to find something to satisfy your appetite!
         </SubHeader>
       </Content>
-      <img className={tw('object-cover w-full')} src={burger} alt="burgers" />
+      <div className="bg-fixed bg-contain overflow-auto h-auto lg:h-64 xl:h-96">
+        <img
+          className={tw('object-cover', 'w-full')}
+          src={burger}
+          alt="burgers"
+        />
+      </div>
     </Element>
   );
 };

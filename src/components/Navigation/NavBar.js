@@ -1,4 +1,9 @@
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import {
+  AiOutlineMenu,
+  AiOutlineClose,
+  AiFillFacebook,
+  AiOutlinePhone,
+} from 'react-icons/ai';
 import tw from '../../helpers/tailwind';
 import NavItem from './NavItem';
 import logo from '../../images/logo.png';
@@ -59,8 +64,21 @@ const NavBar = () => {
           <NavItem link="contact-us">Contact Us</NavItem>
         </div>
       </div>
-      <div className="bg-uni-red w-full p-1 hidden md:block">
-        Open from 4pm daily | Delivery till 2AM - 7 days a week | 01443 405599
+      <div className="bg-uni-red w-full p-1 hidden md:flex items-center justify-center">
+        <p>Open from 4pm daily | Delivery till 2AM - 7 days a week |</p>
+        <div className="flex">
+          <AiOutlinePhone className="text-2xl mx-1" />
+          01443 405599 |
+        </div>
+        <div
+          className="flex cursor-pointer hover:text-blue-800"
+          onClick={() =>
+            window.open('https://www.facebook.com/UniTakeaway102/')
+          }
+        >
+          <AiFillFacebook className="text-2xl mx-1" />
+          Like us!
+        </div>
       </div>
     </header>
   );
