@@ -1,4 +1,4 @@
-# UniTakeaway site
+# Uni Takeaway site
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
@@ -7,20 +7,24 @@
       <ul>
         <li><a href="#built-with">Built With</a></li>
         <li><a href="#comparison">Comparison</a></li>
+        <ul>
+        <li><a href="#desktop">Desktop</a></li>
+        <li><a href="#mobile">Mobile</a></li>
+      </ul>
       </ul>
     </li>
   </ol>
 </details>
 
 ## About The Project
-This project is a redesign of Uni Takeaway's old website, I have kept to the brand colours and general layout of the site while adding in my own design. 
+This project is a redesign of Uni Takeaway's old website, I have kept to the brand colours and general layout of the site while adding in more user friendly designs. 
 
 ### Built With
 - React
 - Tailwind
 
-### Comparison
-
+## Comparison
+### Desktop
 Old site @ 1024x600
 
 ![oldsite1024](comparisonImages/1024Old.png)
@@ -55,6 +59,7 @@ Review:
 - Food hygiene label
   - There is a script to the government's hygiene rating which should update itself if the rating changes. 
 
+### Mobile
 Old site vs Redesign @ 360x640
 
 <img src="comparisonImages/360Old.png" width='300'/>
