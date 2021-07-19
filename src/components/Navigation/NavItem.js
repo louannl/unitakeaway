@@ -7,14 +7,15 @@ const NavItem = (props) => {
       className={tw(
         'block',
         'cursor-pointer',
-        'px-2 py-1',
+        'px-4 py-1',
         'sm:ml-2',
         'border-b-2',
         'border-transparent',
         'transform duration-500',
-        'hover:text-uni-red'
+        'hover:text-uni-red',
+        'hover:border-uni-red'
       )}
-      activeClass="text-uni-red"
+      activeClass="text-uni-red border-uni-red"
       to={props.link}
       spy={true}
       smooth={true}
