@@ -24,9 +24,11 @@ const ContactUs = () => {
             <p>Pontypridd</p>
             <p>Mid Glamorgan</p>
             <p>CF37 1RJ</p>
-            <div className="flex justify-center mt-2">
-              <AiFillPhone className="text-2xl mx-1 text-uni-black" />
-              <p className="italic">01443 405599</p>
+            <div className="flex justify-center mt-2 hover:text-uni-green">
+              <AiFillPhone className="text-2xl mx-1" />
+              <a href="tel:+44-1443-40559" className="italic">
+                01443 405599
+              </a>
             </div>
             <div
               className={tw(

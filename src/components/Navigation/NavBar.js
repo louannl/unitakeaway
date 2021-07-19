@@ -66,9 +66,9 @@ const NavBar = () => {
       </div>
       <div className="bg-uni-red w-full p-1 hidden md:flex items-center justify-center">
         <p>Open from 4pm daily | Delivery till 2AM - 7 days a week |</p>
-        <div className="flex">
+        <div className="flex hover:text-gray-500">
           <AiOutlinePhone className="text-2xl mx-1" />
-          01443 405599 |
+          <a href="tel:+44-1443-40559">01443 405599 |</a>
         </div>
         <div
           className="flex cursor-pointer hover:text-blue-800"
