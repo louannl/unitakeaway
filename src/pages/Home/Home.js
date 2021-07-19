@@ -2,7 +2,6 @@ import { Element } from 'react-scroll';
 import React from 'react';
 import { Content } from '../../components/UI/Content';
 import { Header, SubHeader } from '../../components/UI/headers';
-import tw from '../../helpers/tailwind';
 import burger from '../../images/burger.png';
 
 const Home = () => {
@@ -17,23 +16,8 @@ const Home = () => {
           With a range of foods including pizzas, burgers, kebabs and southern
           fried chicken, you're sure to find something to satisfy your appetite!
         </SubHeader>
+        <img alt="burgers" src={burger} className="w-full" />
       </Content>
-      <div
-        className={tw(
-          'w-full',
-          'md:bg-fixed',
-          'bg-cover',
-          'bg-bottom',
-          'overflow-y-scroll',
-          'h-40',
-          'md:h-64',
-          'xl:h-96'
-        )}
-        style={{
-          backgroundImage: `url(${burger})`,
-          backgroundRepeat: 'no-repeat',
-        }}
-      ></div>
     </Element>
   );
 };
