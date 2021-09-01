@@ -2,6 +2,7 @@ const colors = require('tailwindcss/colors');
 
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  mode: 'jit',
   darkMode: false, // or 'media' or 'class'
   theme: {
     container: {
@@ -28,6 +29,7 @@ module.exports = {
         'uni-green': '#00A058',
         'uni-black': '#272727',
         'uni-red': '#DA4244',
+        'uni-red-dark': '#BB2528',
       },
       width: {
         '1/7': '14.2857143%',
@@ -36,6 +38,9 @@ module.exports = {
         '4/7': '57.1428571%',
         '5/7': '71.4285714%',
         '6/7': '85.7142857%',
+      },
+      zIndex: {
+        '-10': '-10',
       },
     },
   },

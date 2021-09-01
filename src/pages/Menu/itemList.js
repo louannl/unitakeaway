@@ -76,10 +76,58 @@ export const DefaultListType = (props) => {
           'text-center',
           'w-full sm:w-3/7 md:w-2/7',
           'bg-white',
+          'relative',
+          'z-0',
           props.className
         )}
         key={item.name}
       >
+        {item.new ? (
+          <div
+            className={tw(
+              'w-24 h-24',
+              'overflow-hidden',
+              'absolute',
+              '-top-2.5 -left-2.5',
+              'z-10',
+
+              'before:-z-10 after:-z-10',
+
+              'before:absolute',
+              'before:block',
+              'before:border-4',
+              'before:border-uni-red-dark',
+              'before:top-0 before:right-0',
+              'before:border-top-transparent',
+              'before:border-left-transparent',
+
+              'after:absolute',
+              'after:block',
+              'after:border-4',
+              'after:border-uni-red-dark',
+              'after:bottom-0 after:left-0',
+              'after:border-top-transparent',
+              'after:border-left-transparent'
+            )}
+          >
+            <span
+              className={tw(
+                'absolute',
+                'block',
+                'w-36 py-1',
+                '-right-3.5 top-5',
+                'uppercase',
+                'bg-uni-red',
+                'text-white',
+                'transform -rotate-45',
+                'shadow-md',
+                'text-s'
+              )}
+            >
+              New
+            </span>
+          </div>
+        ) : null}
         {item.deal ? (
           <p className="text-center underline font-Courgette font-semibold text-uni-red">
             {item.deal}

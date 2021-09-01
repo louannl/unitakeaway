@@ -24,7 +24,8 @@ const CollapsableContainer = (props) => {
         'bg-gray-50',
         'border-b-2',
         'border-uni-green',
-        'cursor-pointer'
+        'cursor-pointer',
+        'z-10'
       )}
       onClick={toggleCollapse}
     >
@@ -49,7 +50,8 @@ const CollapsableContainer = (props) => {
           'sticky top-16 md:static',
           'bg-gray-50',
           'border-b-2',
-          'border-uni-green'
+          'border-uni-green',
+          'z-10'
         )}
       >
         <h1 className="font-Courgette text-2xl font-bold mt-4 text-center w-full">
