@@ -18,7 +18,7 @@ export const menuItems = {
           deal: '1',
           name: '1/4 Pounder Burger Meal',
           description: '1/4 Pounder, Chips and 330ml drink',
-          price: '4.80',
+          price: '5.00',
         },
         {
           deal: '2',
@@ -30,13 +30,13 @@ export const menuItems = {
           deal: '3',
           name: 'Hawaiian Burger Meal',
           description: 'Hawaiian Burger, Chips and 330ml drink',
-          price: '5.20',
+          price: '5.50',
         },
         {
           deal: '4',
           name: 'Mexican Burger Meal',
           description: 'Mexican Burger, Chips and 330ml drink',
-          price: '5.20',
+          price: '5.50',
         },
         {
           deal: '5',
@@ -51,10 +51,40 @@ export const menuItems = {
           price: '5.50',
         },
         {
+          deal: '7',
+          new: true,
+          name: 'Double Chicken Burger Meal',
+          description: 'Double Chicken Burger, Chips and 330ml drink',
+          price: '7.00',
+        },
+        {
           deal: '8',
           name: 'Veggie Burger Meal',
           description: 'Veggie Burger, Chips and 330ml drink',
-          price: '5.20',
+          price: '5.50',
+        },
+        {
+          deal: '9',
+          new: true,
+          name: 'Special Burger Meal',
+          description: 'Burger with kebab meat, Chips and 330ml drink',
+          prices: {
+            small: '7.00',
+          },
+        },
+        {
+          deal: '11',
+          new: true,
+          name: 'American Burger Meal',
+          description: 'Burger with onion rings, Chips and 330ml drink',
+          price: '5.50',
+        },
+        {
+          deal: '12',
+          new: true,
+          name: 'MEGA Burger Meal',
+          description: 'Triple burger, Chips and 330ml drink',
+          price: '7.50',
         },
       ],
       'Kebab Deals': [
@@ -63,8 +93,8 @@ export const menuItems = {
           name: 'Doner Meal',
           description: 'Doner kebab, Chips and 330ml drink',
           prices: {
-            small: '6.30',
-            large: '7.30',
+            small: '6.50',
+            large: '7.50',
           },
         },
       ],
