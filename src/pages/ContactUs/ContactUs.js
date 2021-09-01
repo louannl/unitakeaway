@@ -46,15 +46,18 @@ const ContactUs = () => {
               Like and Follow us for updates
             </div>
           </div>
-          <div className="sm:w-1/2">
+          <div
+            className={tw(
+              'w-full sm:w-1/2',
+              'p-4',
+              'h-full lg:h-64 xl:h-96',
+              'rounded-sm'
+            )}
+          >
             <iframe
-              class="inline-block"
-              height="200px"
+              className="inline-block mx-0 my-0 h-full w-full"
               title="map"
-              frameborder="0"
               scrolling="no"
-              marginheight="0"
-              marginwidth="0"
               src="https://maps.google.co.uk/maps?hl=en&amp;ie=UTF8&amp;q=uni+takeaway&amp;fb=1&amp;gl=uk&amp;hq=uni+takeaway&amp;cid=0,0,16201449134386230022&amp;t=m&amp;ll=51.595748,-3.329351&amp;spn=0.004265,0.009656&amp;z=16&amp;iwloc=A&amp;output=embed"
             ></iframe>
           </div>
@@ -71,7 +74,7 @@ const ContactUs = () => {
           <MinOrder
             counties="Hawthorn, Maesycoed, Graigwen, Hopkinstown and Cilfynydd"
             minimum="8"
-            charge="1.50"
+            charge="2.00"
           />
           <MinOrder
             counties="Tonteg, Church Village, Glyncoch and Coed Y Cwm"
@@ -81,7 +84,7 @@ const ContactUs = () => {
           <MinOrder
             counties="Trehafod, Beddau, Llantwit Fadre, Ynysybwl, Taffs Well, Nantgarw and Efail Isaf"
             minimum="10"
-            charge="2.50"
+            charge="3.00"
           />
         </div>
       </Content>

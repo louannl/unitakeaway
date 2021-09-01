@@ -6,7 +6,10 @@ const MenuExtras = (props) => {
 
   let extraItems = extras.map((extra) => {
     return (
-      <div className="flex flex-wrap italic justify-around items-center">
+      <div
+        className="flex flex-wrap italic justify-around items-center"
+        key={extra.name}
+      >
         <p className="text-uni-green">ADD: </p>
         <p className="mx-1">{extra.name}</p>
         {extra.price ? <ItemPrice>+£{extra.price}</ItemPrice> : null}

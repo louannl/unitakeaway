@@ -376,8 +376,8 @@ export const menuItems = {
       ],
     },
   },
-  southernFriedChicken: {
-    label: 'Southern Fried Chicken',
+  spicyWings: {
+    label: 'Spicy Wings',
     images: [friedchicken],
     description:
       'Chicken portions covered in our secret recipe coating and pressure cooked until tender.',
@@ -398,8 +398,8 @@ export const menuItems = {
         description:
           'Cooked on a vertical spit, sliced into thin crisp shavings',
         prices: {
-          Small: '4.30',
-          Large: '5.30',
+          Small: '4.50',
+          Large: '5.50',
         },
       },
       {
@@ -462,8 +462,9 @@ export const menuItems = {
     label: 'Sides',
     images: [onionrings],
     items: [
-      { name: '5 Spicy Chicken Wings', price: '2.50' },
+      { name: '5 Chicken sticks', price: '2.50' },
       { name: '9 Onion Rings', price: '2.00' },
+      { name: '5 Mozzarella Cheese Sticks', price: '2.50' },
       { name: '10 Garlic Mushrooms', price: '2.00' },
       { name: 'Potato Wedges', price: '1.00' },
       { name: 'Coleslaw', price: '1.00' },

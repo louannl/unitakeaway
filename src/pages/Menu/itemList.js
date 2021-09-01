@@ -57,7 +57,7 @@ export const DefaultListType = (props) => {
     if (item.prices) {
       for (const [key, value] of Object.entries(item.prices)) {
         itemPrices.push(
-          <ItemPrice>
+          <ItemPrice key={`${key}${value}`}>
             {key} : £{value}
           </ItemPrice>
         );
@@ -84,7 +84,7 @@ export const DefaultListType = (props) => {
             {item.deal}
           </p>
         ) : null}
-        <ItemName>{item.name}</ItemName>
+        <ItemName key={item.name}>{item.name}</ItemName>
         <ItemDescription>{item.description}</ItemDescription>
         <div>
           {itemPrices.length > 0 ? (

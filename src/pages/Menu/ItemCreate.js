@@ -9,7 +9,6 @@ const ItemCreate = (props) => {
   let deals = '';
 
   for (const [key, value] of Object.entries(item)) {
-    console.log('key:', key, 'value:', value);
     if (key === 'items') {
       deals = <DefaultListType items={value} />;
     } else if (key === 'description') {

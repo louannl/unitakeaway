@@ -6,6 +6,7 @@ const MenuNav = () => {
   const listItems = Object.keys(menuItems).map((name) => {
     return (
       <Link
+        key={name}
         className={tw(
           'block',
           'font-Courgette text-xl',

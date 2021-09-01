@@ -8,7 +8,6 @@ import tw from '../../helpers/tailwind';
 import NavItem from './NavItem';
 import logo from '../../images/logo.png';
 import { useState } from 'react';
-import { Content } from '../UI/Content';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
