@@ -36,7 +36,7 @@ const MenuItems = () => {
     }
 
     menu.push(
-      <CollapsableContainer name={value.label}>
+      <CollapsableContainer key={key} name={value.label}>
         <SubHeader className="text-uni-black">{value.description}</SubHeader>
         {images}
         {extraItems}

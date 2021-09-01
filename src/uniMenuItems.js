@@ -101,7 +101,7 @@ export const menuItems = {
       { name: '1/4 Pounder Beef Burger', price: '2.80' },
       { name: '1/2 Pounder Beef Burger', price: '4.30' },
       {
-        name: '1/2 Pounder Beef Burger',
+        name: 'Mega Burger',
         description: '3 x 1/4 Pounders',
         price: '4.30',
       },

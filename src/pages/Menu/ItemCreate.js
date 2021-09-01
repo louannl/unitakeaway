@@ -25,6 +25,7 @@ const ItemCreate = (props) => {
             'text-center',
             'shadow-md'
           )}
+          key={key}
         >
           <p className="capitalize italic font-semibold text-white">
             Pick your {key}!

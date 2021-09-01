@@ -57,7 +57,7 @@ export const DefaultListType = (props) => {
     if (item.prices) {
       for (const [key, value] of Object.entries(item.prices)) {
         itemPrices.push(
-          <ItemPrice key={`${key}${value}`}>
+          <ItemPrice key={key}>
             {key} : £{value}
           </ItemPrice>
         );
@@ -78,13 +78,14 @@ export const DefaultListType = (props) => {
           'bg-white',
           props.className
         )}
+        key={item.name}
       >
         {item.deal ? (
           <p className="text-center underline font-Courgette font-semibold text-uni-red">
             {item.deal}
           </p>
         ) : null}
-        <ItemName key={item.name}>{item.name}</ItemName>
+        <ItemName>{item.name}</ItemName>
         <ItemDescription>{item.description}</ItemDescription>
         <div>
           {itemPrices.length > 0 ? (
@@ -108,7 +109,13 @@ export const DealListType = (props) => {
     let deals = <DefaultListType items={value} className="border-uni-green" />;
 
     menuDeals.push(
-      <div className="w-full flex flex-wrap items-stretch content-start justify-around">
+      <div
+        className={tw(
+          'w-full flex flex-wrap',
+          'items-stretch content-start justify-around'
+        )}
+        key={key}
+      >
         <SubHeader className="text-center underline w-full">{key}</SubHeader>
         {deals}
       </div>
