@@ -4,7 +4,7 @@ import tw from '../../helpers/tailwind';
 
 export const ItemName = (props) => {
   return (
-    <h2 className={tw('pb-0.5', 'font-semibold', props.className)}>
+    <h2 className={tw('py-2', 'font-semibold', props.className)}>
       {props.children}
     </h2>
   );
