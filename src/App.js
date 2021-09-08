@@ -1,3 +1,4 @@
+import Footer from './components/Footer/Footer';
 import NavBar from './components/Navigation/NavBar';
 import ContactUs from './pages/ContactUs/ContactUs';
 import Home from './pages/Home/Home';
@@ -10,6 +11,7 @@ function App() {
       <Home />
       <Menu />
       <ContactUs />
+      <Footer />
     </div>
   );
 }
