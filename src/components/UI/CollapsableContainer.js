@@ -20,7 +20,7 @@ const CollapsableContainer = (props) => {
         'flex',
         'items-center',
         'justify-between',
-        'sticky top-16 md:static',
+        'top-16 md:static',
         'bg-gray-50',
         'border-b-2',
         'border-uni-green',
