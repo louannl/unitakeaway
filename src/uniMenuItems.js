@@ -69,7 +69,7 @@ export const menuItems = {
           name: 'Special Burger Meal',
           description: 'Burger with kebab meat, Chips and 330ml drink',
           prices: {
-            small: '7.00',
+            small: '7.50',
           },
         },
         {
@@ -84,7 +84,7 @@ export const menuItems = {
           new: true,
           name: 'MEGA Burger Meal',
           description: 'Triple burger, Chips and 330ml drink',
-          price: '7.50',
+          price: '8.00',
         },
       ],
       'Kebab Deals': [
@@ -128,12 +128,12 @@ export const menuItems = {
     description:
       'Served in a lightly toasted bun with your choice of salad and sauce.',
     items: [
-      { name: '1/4 Pounder Beef Burger', price: '2.80' },
-      { name: '1/2 Pounder Beef Burger', price: '4.30' },
+      { name: '1/4 Pounder Beef Burger', price: '3.00' },
+      { name: '1/2 Pounder Beef Burger', price: '4.50' },
       {
         name: 'Mega Burger',
         description: '3 x 1/4 Pounders',
-        price: '4.30',
+        price: '6.30',
       },
       {
         name: 'Hawaiian Burger',
@@ -158,12 +158,12 @@ export const menuItems = {
       {
         name: 'Special Burger',
         description: 'with Doner Meat',
-        price: '4.50',
+        price: '5.00',
       },
       { name: 'Chicken Burger', price: '3.50' },
       { name: 'Chicken Burger with Hash brown', price: '3.90' },
       { name: 'Double Chicken Burger', price: '5.00' },
-      { name: 'Veggie Burger', price: '3.20' },
+      { name: 'Veggie Burger', price: '3.50' },
       { name: 'Veggie Burger with Hash brown', price: '3.60' },
     ],
     extras: [
@@ -183,7 +183,7 @@ export const menuItems = {
         prices: {
           '7"': '3.00',
           '9"': '5.00',
-          '12"': '8.00',
+          '12"': '8.50',
         },
       },
       {
@@ -191,7 +191,7 @@ export const menuItems = {
         prices: {
           '7"': '3.50',
           '9"': '6.00',
-          '12"': '8.50',
+          '12"': '9.00',
         },
       },
       {
@@ -199,7 +199,7 @@ export const menuItems = {
         prices: {
           '7"': '4.00',
           '9"': '6.00',
-          '12"': '9.30',
+          '12"': '9.50',
         },
       },
       {
@@ -239,7 +239,7 @@ export const menuItems = {
         prices: {
           '7"': '4.20',
           '9"': '6.00',
-          '12"': '9.30',
+          '12"': '9.50',
         },
       },
       {
@@ -247,7 +247,7 @@ export const menuItems = {
         prices: {
           '7"': '4.30',
           '9"': '6.00',
-          '12"': '9.30',
+          '12"': '9.50',
         },
       },
       {
@@ -280,7 +280,7 @@ export const menuItems = {
       {
         name: 'Spicy Tandoori',
         description:
-          'Chili Base, Tandoori Chicken, Peppers, Mushrooms & Jalapenos',
+          'Chilli Base, Tandoori Chicken, Peppers, Mushrooms & Jalapenos',
         prices: {
           '7"': '4.50',
           '9"': '6.50',
@@ -330,7 +330,7 @@ export const menuItems = {
           prices: {
             '7"': '4.00',
             '9"': '6.00',
-            '12"': '9.00',
+            '12"': '9.50',
           },
         },
         {
@@ -346,7 +346,7 @@ export const menuItems = {
           prices: {
             '7"': '4.80',
             '9"': '6.90',
-            '12"': '9.80',
+            '12"': '9.90',
           },
         },
       ],
@@ -437,16 +437,16 @@ export const menuItems = {
         description:
           'Pieces of Chicken breast marinated and cooked on our open grill',
         prices: {
-          Small: '5.00',
-          Large: '7.00',
+          Small: '5.50',
+          Large: '7.50',
         },
       },
       {
         name: 'Lamb Shish',
         description: 'Pieces of Lamb marinated and cooked on our open grill',
         prices: {
-          Small: '5.00',
-          Large: '7.00',
+          Small: '5.50',
+          Large: '7.50',
         },
       },
       {
@@ -454,8 +454,8 @@ export const menuItems = {
         description:
           'Lamb mince infused with herbs & spices cooked on our open grill',
         prices: {
-          Small: '5.00',
-          Large: '7.00',
+          Small: '5.50',
+          Large: '7.50',
         },
       },
       {
@@ -468,22 +468,22 @@ export const menuItems = {
       {
         name: 'Mixed: Doner & Shish',
         prices: {
-          Large: '7.00',
-          'X-Large': '8.50',
+          Large: '7.50',
+          'X-Large': '9.00',
         },
       },
       {
         name: 'Mixed: Shish & Kofte',
         prices: {
-          Large: '7.00',
-          'X-Large': '8.50',
+          Large: '7.50',
+          'X-Large': '9.00',
         },
       },
       {
         name: 'Mixed: Chicken Shish & Lamb Shish',
         prices: {
-          Large: '7.00',
-          'X-Large': '8.50',
+          Large: '7.50',
+          'X-Large': '9.00',
         },
       },
     ],
@@ -496,7 +496,7 @@ export const menuItems = {
       { name: '9 Onion Rings', price: '2.00' },
       { name: '5 Mozzarella Cheese Sticks', price: '2.50' },
       { name: '10 Garlic Mushrooms', price: '2.00' },
-      { name: 'Potato Wedges', price: '1.00' },
+      { name: 'Potato Wedges', price: '2.50' },
       { name: 'Coleslaw', price: '1.00' },
       {
         name: 'Gravy / Beans / Chilli / Curry Sauce',
@@ -573,29 +573,35 @@ export const menuItems = {
       {
         name: 'Coca-Cola',
         prices: {
-          Can: '0.90',
+          Can: '1.00',
           '1.5lt': '2.50',
         },
       },
       {
         name: 'Diet Coca-Cola',
         prices: {
-          Can: '0.90',
+          Can: '1.00',
           '1.5lt': '2.50',
         },
       },
       {
         name: 'Coca-Cola Zero',
         prices: {
-          Can: '0.90',
+          Can: '1.00',
           '1.5lt': '2.50',
         },
       },
       {
         name: '7up',
         prices: {
-          Can: '0.90',
+          Can: '1.00',
           '1.5lt': '2.50',
+        },
+      },
+      {
+        name: 'Yazoo Milkshake',
+        prices: {
+          '400ml Bottle': '1.50',
         },
       },
     ],

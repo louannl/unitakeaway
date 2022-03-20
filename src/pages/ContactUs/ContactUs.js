@@ -69,7 +69,7 @@ const ContactUs = () => {
           <MinOrder
             counties="Treforest, Graig and Rhydyfelin"
             minimum="6"
-            charge="1.00"
+            charge="1.50"
           />
           <MinOrder
             counties="Hawthorn, Maesycoed, Graigwen, Hopkinstown and Cilfynydd"
@@ -77,14 +77,15 @@ const ContactUs = () => {
             charge="2.00"
           />
           <MinOrder
-            counties="Tonteg, Church Village, Glyncoch and Coed Y Cwm"
-            minimum="10"
-            charge="2.00"
+              counties="Glyncoch and Coed Y Cwm"
+              minimum="10"
+              charge="2.50"
           />
           <MinOrder
-            counties="Trehafod, Beddau, Llantwit Fadre, Ynysybwl, Taffs Well, Nantgarw and Efail Isaf"
+            counties="Tonteg, Church Village, Trehafod, Beddau, Llantwit Fadre, Ynysybwl,
+            Taffs Well, Nantgarw and Efail Isaf"
             minimum="10"
-            charge="3.00"
+            charge="3.50"
           />
         </div>
       </Content>
