@@ -22,6 +22,9 @@ module.exports = {
       blue: colors.blue,
     },
     extend: {
+      fontSize: {
+        'xs': '.75rem',
+      },
       fontFamily: {
         Courgette: ['Courgette', 'cursive'],
       },
