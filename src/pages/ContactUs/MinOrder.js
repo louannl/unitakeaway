@@ -14,7 +14,7 @@ const MinOrder = (props) => {
         "w-full",
         "p-2",
         "lg:w-1/3",
-        "xl:w-1/5",
+        "xl:w-1/4",
         "flex flex-col"
       )}
     >

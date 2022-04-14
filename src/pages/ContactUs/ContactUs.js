@@ -67,25 +67,35 @@ const ContactUs = () => {
         </SubHeader>
         <div className="flex flex-wrap justify-around">
           <MinOrder
-            counties="Treforest, Graig and Rhydyfelin"
+            counties="Treforest"
             minimum="6"
-            charge="1.50"
+            charge="1.00"
+          />
+          <MinOrder
+            counties="Graig and Rhydyfelin"
+            minimum="6"
+            charge="2.00"
           />
           <MinOrder
             counties="Hawthorn, Maesycoed, Graigwen, Hopkinstown and Cilfynydd"
             minimum="8"
-            charge="2.00"
+            charge="2.50"
           />
           <MinOrder
-              counties="Glyncoch and Coed Y Cwm"
+              counties="Tonteg, Glyncoch"
               minimum="10"
-              charge="2.50"
+              charge="3.00"
           />
           <MinOrder
-            counties="Tonteg, Church Village, Trehafod, Beddau, Llantwit Fadre, Ynysybwl,
-            Taffs Well, Nantgarw and Efail Isaf"
+            counties="Church Village, Coed Y Cwm"
             minimum="10"
             charge="3.50"
+          />
+          <MinOrder
+            counties="Trehafod, Beddau, Llantwit Fadre, Ynysybwl,
+            Nantgarw and Efail Isaf"
+            minimum="10"
+            charge="4.50"
           />
         </div>
       </Content>
