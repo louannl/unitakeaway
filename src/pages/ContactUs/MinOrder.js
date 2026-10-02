@@ -20,7 +20,6 @@ const MinOrder = (props) => {
     >
       <p className="h-full p-2">{props.counties}</p>
       <p className="text-uni-red">MINIMUM ORDER £{props.minimum}</p>
-      <p className="font-semibold">+ £{props.charge} Delivery charge</p>
     </div>
   )
 }

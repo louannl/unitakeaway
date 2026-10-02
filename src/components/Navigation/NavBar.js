@@ -47,6 +47,9 @@ const NavBar = () => {
             <button
               type="button"
               className="block text-white"
+              aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+              aria-expanded={isOpen}
+              aria-controls="main-navigation"
               onClick={toggleMenu}
             >
               {isOpen ? (
@@ -57,7 +60,9 @@ const NavBar = () => {
             </button>
           </div>
         </div>
-        <div
+        <nav
+          id="main-navigation"
+          aria-label="Main navigation"
           className={`px-2 pt-2 pb-4 ${
             isOpen ? 'block' : 'hidden'
           } sm:flex sm:p-0`}
@@ -65,7 +70,7 @@ const NavBar = () => {
           <NavItem link="home">Home</NavItem>
           <NavItem link="menu">Menu</NavItem>
           <NavItem link="contact-us">Contact Us</NavItem>
-        </div>
+        </nav>
       </div>
       <div className="bg-uni-red w-full p-1 hidden md:flex items-center justify-center">
         <p>Open from 4pm daily | Delivery till 2AM - 7 days a week |</p>
